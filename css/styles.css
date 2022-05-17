@@ -24,8 +24,6 @@ p {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
-    padding: 0 30px;
-
 }
 
 /* Header
@@ -58,8 +56,8 @@ p {
 .logo__name {
     font-size: 34px;
     font-family: 'Raleway', sans-serif;
-    color: #fff; 
-    font-style: 500; 
+    color: #fff;
+    font-style: 500;
     padding: 7px 0 10px;
 }
 
@@ -111,7 +109,7 @@ p {
     justify-content: center;
     height: 1024px;
     background: #4b4a46 url("../img/intro-bg.jpg") center no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
 .intro__inner {
@@ -145,7 +143,7 @@ p {
     line-height: 1.5;
     font-weight: 300;
     margin-bottom: 45px;
- 
+
 }
 
 
@@ -181,3 +179,70 @@ p {
     background-color: #807364;
     box-shadow: 0 3px 0 #534b42;
 }
+
+/* Services
+===================*/
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px 0;
+}
+
+.services__item {
+    width: 25%;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.services__link {
+    height: 240px;
+    text-decoration: none;
+}
+
+.services__icon {
+    margin-bottom: 15px;
+    height: 45px;
+}
+
+.services__title {
+    font-family: 'Raleway', sans-serif;;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.services__text {
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #8c8c8c;
+}
+
+.underline {
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+}
+
+.services__link__gold {
+    color: #555555;
+    transition: color .2s linear;
+}
+
+.services__link__gold:hover {
+    color: #c0b199;
+}
+
+.services__link__gold .underline {
+    border-bottom: 3px solid #f0ede9;
+    transition: border .2s linear;
+}
+
+.services__link__gold:hover .underline {
+    border-bottom: 3px solid #c0b199;
+}
+
+
+
+

@@ -150,6 +150,7 @@ p {
 ===================*/
 
 .btn {
+    /* max-width: 170px; */
     display: inline-block;
     vertical-align: top;
     padding: 16px 40px;
@@ -299,7 +300,7 @@ p {
 
 .ideas__immages {
     position: relative;
-    height: 482px;
+    max-height: 482px;
     overflow: hidden;
 
 }
@@ -310,17 +311,68 @@ p {
 }
 
 .left__back {
+    max-height: 400px;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
     z-index: 1;
 }
 
 .right__back {
+    max-height: 400px;
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: 1;
+}
+
+/* Purcahse
+===================*/
+
+.purchase {
+    background: linear-gradient(to right,#211b19, #4e3427);
+}
+
+.purchase__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.purchase__item {
+    width: 80%;
+    display: inline;
+    margin: 0 2px;
+}
+
+.purchase__item__btn {
+    width: 20%
+}
+
+
+.purchase__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.coloredtext {
+    color: #c7b299;
+}
+
+.purchase__subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color: #615855;
+    margin-bottom: 0;
+}
+
+.purchase__button {
+    text-align: right;
 }
 
 

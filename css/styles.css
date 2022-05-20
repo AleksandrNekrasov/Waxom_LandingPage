@@ -150,10 +150,11 @@ p {
 ===================*/
 
 .btn {
-    /* max-width: 170px; */
+    width: 170px;
+    height: 50px;
     display: inline-block;
-    vertical-align: top;
-    padding: 16px 40px;
+    vertical-align: middle;
+    padding-top: 17px;
 
     border-radius: 5px;
     border: 0;
@@ -335,22 +336,23 @@ p {
 
 .purchase__inner {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 40px 0;
 }
 
-.purchase__item {
-    width: 80%;
+.purchase__text {
+    width: 70%;
     display: inline;
     margin: 0 2px;
 }
 
-.purchase__item__btn {
-    width: 20%
+.purchase__button {
+    display: inline;
+    width: 30%;
+    margin: 0 5px;
+    text-align: right;
 }
-
 
 .purchase__title {
     font-family: 'Raleway', sans-serif;
@@ -360,7 +362,7 @@ p {
     margin-bottom: 5px;
 }
 
-.coloredtext {
+.purchase__coloredtext {
     color: #c7b299;
 }
 
@@ -370,11 +372,6 @@ p {
     color: #615855;
     margin-bottom: 0;
 }
-
-.purchase__button {
-    text-align: right;
-}
-
 
 
 

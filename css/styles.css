@@ -373,10 +373,67 @@ p {
     margin-bottom: 0;
 }
 
+/* Latest projects
+===================*/
 
+.projects__inner {
+    width: 100%;
+    text-align: center;
 
+}
 
+.projects__title {
+    margin: 70px 0 20px;
+}
 
+.projects__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
 
+.projects__subtitle {
+    font-size: 16pt;
+    font-weight: 300;
+    margin-bottom: 40px;
+    padding: 0 70px;
+}
 
+.projects__buttons {
+    display: flex;
+
+    margin-bottom: 40px;
+}
+
+.projects__buttons__item{
+    width: 100%;
+    margin: 0 10px;
+}
+
+.projects__btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 16px;
+
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+
+    transition: background .1s linear;
+}
+
+.projects__btn--gold {
+    border: 1px #ebebeb solid;
+    background-color: #fff;
+    color: #8c8c8c;
+}
+
+.projects__btn--gold:hover {
+    border: 0;
+    background-color: #998675;
+    color: #fff;
+}
 

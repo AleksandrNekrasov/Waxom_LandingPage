@@ -656,7 +656,6 @@ p {
 
 .video__inner {
     text-align: center;
-    padding: 205px 0 ;
 }
 
 .video__playbtn {
@@ -698,3 +697,55 @@ p {
     color: #c7b299;
     font-weight: 400;
 }
+
+/* Mobile
+===================*/
+
+.mobile {
+    display: flex;
+    height: 695px;
+    overflow: hidden;
+}
+
+.mobile__img {
+    width: 696px;
+    padding-top: 79px;
+    padding-left: 25px;
+}
+
+.mobile__description {
+    padding-top: 193px;
+    padding-left: 30px;
+}
+
+.mobile__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 35px;
+}
+
+.mobile__text {
+    font-size: 16px;
+    font-weight: 300;
+    color: #8c8c8c;
+    margin-bottom: 42px;
+    line-height: 1.7;
+}
+
+.mobile__list {
+    display: flex;
+    height: 30px;
+    margin-bottom: 5px;
+    padding-left: 73px;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 300;
+    color: #8c8c8c;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+

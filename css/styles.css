@@ -749,3 +749,63 @@ p {
     padding-left: 30px;
 }
 
+/* Counters
+===================*/
+
+.counters {
+    background: linear-gradient(to right,#211b19, #4e3427);
+    padding: 68px 0 58px;
+}
+
+.counters__inner {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.counters__item {
+    text-align: center;
+    width: 20%;
+    padding: 0 33px;
+}
+
+.counters__item:first-child {
+    padding-left: 0;
+}
+
+.counters__item:last-child {
+    padding-right: 0;
+}
+
+.counters__icon {
+    margin-bottom: 25px;
+}
+
+.counters__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.counters__value {
+    font-size: 48px;
+    font-weight: 200;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.counters__name {
+    font-weight: 300;
+    color: #c7b299;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.counters__line {
+    display: inline-block;
+    width: 30px;
+    border-bottom: 2px solid #ffff;
+}
+
+
+
+

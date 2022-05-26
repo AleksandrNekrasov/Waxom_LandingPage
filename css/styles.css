@@ -703,19 +703,27 @@ p {
 
 .mobile {
     display: flex;
-    height: 695px;
+    flex-wrap: wrap;
     overflow: hidden;
 }
 
+.mobile__picture {
+    width: 40%;
+    position: relative;
+    height: 695px;
+}
+
 .mobile__img {
-    width: 696px;
-    padding-top: 79px;
-    padding-left: 25px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
 }
 
 .mobile__description {
-    padding-top: 193px;
-    padding-left: 30px;
+    width: 60%;
+    padding: 193px 0 0 30px;
 }
 
 .mobile__title {
@@ -735,17 +743,28 @@ p {
 }
 
 .mobile__list {
+    padding-left: 43px;
+}
+
+.mobile__item {
     display: flex;
-    height: 30px;
-    margin-bottom: 5px;
-    padding-left: 73px;
+    margin-bottom: 10px;
+}
+
+.mobile__item:last-child {
+    margin-bottom: 0;
+}
+
+.mobile__point {
+    width: 21px;
+    height: 21px;
 }
 
 .text {
+    margin: 0;
     font-size: 16px;
     font-weight: 300;
     color: #8c8c8c;
-    padding-top: 5px;
     padding-left: 30px;
 }
 

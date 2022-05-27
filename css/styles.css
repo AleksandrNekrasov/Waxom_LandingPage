@@ -22,8 +22,9 @@ p {
 
 .container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Header
@@ -849,25 +850,21 @@ p {
 
 .posts__elements {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
 }
 
 .posts__item {
     width: 33.33333%;
-
-    position: relative;
-    z-index: 1;
-    margin-right: 30px;
-
-
+    padding: 0 15px;
+    margin-bottom: 40px;
 }
 
-.posts__item:last-child {
-    margin-right: 0;
-}
 
 .posts__photo {
     max-width: 100%;
     position: relative;
+    z-index: 1;
 }
 
 .posts__img {
@@ -875,7 +872,6 @@ p {
     width: 100%;
     height: auto;
     object-fit: cover;
-
 }
 
 .posts__shadow {
@@ -966,7 +962,7 @@ p {
 
     position: absolute;
     top: 6%;
-    left: 6%;
+    left: 4%;
     z-index: 3;
     transition: all .2s linear;
 
@@ -987,3 +983,35 @@ p {
     margin: 0;
 }
 
+.posts__buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow_left {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/Content/Posts/arrow-left.png);
+    margin-right: 4px;
+
+    transition: all .2s linear;
+}
+
+.arrow_right {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/Content/Posts/arrow-right.png);
+    margin-left: 4px;
+
+    transition: all .2s linear;
+}
+
+.arrow_left:hover {
+    background-image: url(../img/Content/Posts/arrow-left-gold.png);
+}
+
+.arrow_right:hover {
+    background-image: url(../img/Content/Posts/arrow-right-gold.png);
+}

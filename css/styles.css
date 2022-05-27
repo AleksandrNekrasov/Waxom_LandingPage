@@ -1015,3 +1015,37 @@ p {
 .arrow_right:hover {
     background-image: url(../img/Content/Posts/arrow-right-gold.png);
 }
+
+/* Partners
+===================*/
+
+.partners {
+    background: #181818 url(../img/Content/Partners/background-photo.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.partners__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 140px 0;
+    align-items: center;
+}
+
+.partners__item {
+    width: 25%;
+    padding: 0 42.5px;
+}
+
+.partners__item:first-child{
+    padding-left: 27px;
+}
+
+.partners__item:last-child{
+    padding-right: 27px;
+}
+
+.partners__logo {
+    display: block;
+    width: 100%;
+    height: auto;
+}

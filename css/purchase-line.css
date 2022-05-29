@@ -1,0 +1,45 @@
+/* Purcahse
+===================*/
+
+.purchase {
+    background: linear-gradient(to right,#211b19, #4e3427);
+}
+
+.purchase__inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.purchase__text {
+    width: 70%;
+    display: inline;
+    margin: 0 2px;
+}
+
+.purchase__button {
+    display: inline;
+    width: 30%;
+    margin: 0 5px;
+    text-align: right;
+}
+
+.purchase__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.purchase__coloredtext {
+    color: #c7b299;
+}
+
+.purchase__subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color: #615855;
+    margin-bottom: 0;
+}

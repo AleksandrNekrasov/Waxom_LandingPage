@@ -1,0 +1,191 @@
+/* Posts
+===================*/
+.posts {
+    text-align: center;
+    padding: 80px 0;
+
+}
+
+.posts__main-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.posts__main-subtitle{
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    line-height: 1.7;
+    padding: 0 70px;
+}
+
+.posts__elements {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.posts__item {
+    width: 33.33333%;
+    padding: 0 15px;
+    margin-bottom: 40px;
+}
+
+
+.posts__photo {
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.posts__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.posts__shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+
+    transition: all .2s linear;
+}
+
+.posts__description {
+    padding: 30px 0px 30px 30px;
+    margin: 0;
+    max-width: 100%;
+
+    text-align: left;
+
+    border: 1px #f8f8f8 solid;
+    border-top: 0;
+
+    background-color: #fff;
+    transition: all .2s linear;
+}
+
+.posts__name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #555555;
+
+    transition: all .2s linear;
+}
+
+.posts__text {
+    margin: 20px 0 25px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #8c8c8c;
+
+    transition: all .2s linear;
+}
+
+.posts__link {
+    display: inline;
+    font-weight: 300;
+    color: #c7b299;
+    text-decoration: none;
+}
+
+/* Posts
+   animation
+===================*/
+.posts__item:hover .posts__shadow {
+    opacity: 1;
+}
+
+.posts__item:hover .calendar-icon {
+    background: linear-gradient(to bottom, #c7b299 60%, #a48d72 40%);
+}
+
+.posts__item:hover .posts__description {
+    background-color: #362f2d;
+    border: 1px #362f2d solid;
+    border-top: 0;
+}
+
+.posts__item:hover .posts__name {
+    color: #c7b299;
+}
+
+.posts__item:hover .posts__text {
+    color: #ffff;
+}
+
+/* calendar-icon
+===================*/
+.calendar-icon {
+    display: block;
+    margin: 0;
+    width: 50px;
+    height: 55px;
+    border-radius: 3px;
+
+    position: absolute;
+    top: 6%;
+    left: 4%;
+    z-index: 3;
+    transition: all .2s linear;
+
+    background: linear-gradient(to bottom, #363636 60%, #252525 40%);
+}
+
+.calendar-icon__day-number {
+    font-size: 24px;
+    font-weight: 300;
+    color: #ffff;
+    margin: 2px 0 4px 0;
+}
+
+.calendar-icon__month-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #ffff;
+    margin: 0;
+}
+
+.posts__buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow_left {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/Content/Posts/arrow-left.png);
+    margin-right: 4px;
+
+    transition: all .2s linear;
+}
+
+.arrow_right {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/Content/Posts/arrow-right.png);
+    margin-left: 4px;
+
+    transition: all .2s linear;
+}
+
+.arrow_left:hover {
+    background-image: url(../img/Content/Posts/arrow-left-gold.png);
+}
+
+.arrow_right:hover {
+    background-image: url(../img/Content/Posts/arrow-right-gold.png);
+}

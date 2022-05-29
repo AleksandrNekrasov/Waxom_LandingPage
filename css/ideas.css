@@ -1,0 +1,60 @@
+/* Ideas
+===================*/
+.ideas {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fbfaf8;
+}
+
+.ideas__inner {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1230px;
+}
+
+.ideas__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 65px 0 35px;
+}
+
+.ideas__text {
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    padding: 0 200px;
+
+    margin-bottom: 35px;
+}
+
+.ideas__immages {
+    position: relative;
+    max-height: 482px;
+    overflow: hidden;
+
+}
+
+.front {
+    position: relative;
+    z-index: 2;
+}
+
+.left__back {
+    max-height: 400px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    z-index: 1;
+}
+
+.right__back {
+    max-height: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}

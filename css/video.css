@@ -1,0 +1,55 @@
+/* Video Presentation
+===================*/
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 705px;
+    background: url(../img/Content/Video/background-photo.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.video__inner {
+    text-align: center;
+}
+
+.video__playbtn {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.icon__play {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.video__titie {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.video__subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.video__time {
+    color: #c7b299;
+    font-weight: 400;
+}

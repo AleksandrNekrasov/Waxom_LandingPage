@@ -1,0 +1,112 @@
+/* Intro
+===================*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1024px;
+    background: #4b4a46 url("../img/intro-bg.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__overtitle {
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    color:#fff;
+    font-weight: 500;
+}
+
+.intro__title {
+    font-size: 52px;
+    font-family: 'Raleway', sans-serif;
+    color:#fff;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.intro__inner p {
+
+    padding: 0 25px;
+
+    color:#fff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 45px;
+}
+
+.cart__button {
+    display: block;
+    height: 24px;
+    width: 18px;
+    transition: all .1s linear;
+
+}
+
+.cart__button_gold {
+    background: url(../img/Header/icon-cart.png);
+}
+
+.cart__button_gold:hover {
+    background: url(../img/Header/icon-cart-gold.png);
+}
+
+
+.search__button {
+    display: block;
+    height: 24px;
+    width: 24px;
+    transition: all .1s linear;
+}
+
+.search__button_gold {
+    background: url(../img/Header/icon-search.png);
+}
+
+.search__button_gold:hover {
+    background: url(../img/Header/icon-search-gold.png);
+}
+
+
+/* Button
+===================*/
+
+.btn {
+    width: 170px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 17px;
+
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
+    transition: background .1s linear;
+}
+
+.btn--gold {
+    background-color: #928575;
+    box-shadow: 0 3px 0 #6e6358;
+}
+
+.btn--gold:hover {
+    background-color: #807364;
+    box-shadow: 0 3px 0 #534b42;
+}

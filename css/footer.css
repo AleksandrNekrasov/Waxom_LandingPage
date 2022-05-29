@@ -1,0 +1,181 @@
+/* Footer
+===================*/
+
+/* main */
+.footer {
+    background-color: #191919;
+}
+
+.footer__inner {
+    width: 100%;
+    display: flex;
+    padding: 76px 0;
+    /* margin: 0 -15px; */
+}
+
+.footer__item {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer__item:last-child {
+    padding-right: 0;
+}
+
+.footer__item:first-child {
+    padding-left: 0;
+}
+
+
+/* text */
+.footer__text {
+    font-weight: 300;
+    line-height: 1.58;
+    color: #555555;
+
+    margin: 0;
+}
+
+.footer__text_margin-b-t_25 {
+    margin: 25px 0;
+}
+
+
+.footer__text_gold {
+    color: #c7b299;
+
+}
+
+/* Links */
+
+/* links - Read_More */
+.footer__link {
+    color: #ffff;
+}
+
+.footer__link:hover {
+    color: #cfcfcf;
+}
+
+
+/* links - blue */
+.text-link {
+    text-decoration: none;
+    color: #00bff3;
+}
+
+.text-link:hover {
+    color: #0285a9;
+}
+
+/* links - white */
+
+.text-link_white {
+    color: #959595;
+}
+
+.text-link_white:hover {
+    color: #cfcfcf;
+}
+
+
+/* title */
+.footer__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+/* data-time */
+.footer__data-time {
+    font-size: 12px;
+    font-weight: 300;
+    color: #363636;
+    margin-bottom: 4px;
+}
+
+.footer__data-time_white {
+    color: #ffff;
+}
+
+/* underline */
+.underline_thin {
+    width: 100%;
+    border-bottom: 1px solid #363636;
+    margin: 20px 0 15px;
+}
+
+/* photo */
+.footer__photo-block {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footer__img {
+    display: block;
+    width: 50%;
+    height: auto;
+
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.footer__img:nth-child(odd) {
+    padding-left: 0;
+}
+
+.footer__img:nth-child(even) {
+    padding-right: 0;
+}
+
+/* copyright
+===================*/
+.copyright {
+    background: #111111;
+    padding: 42px 0;
+}
+
+.copyright__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright__group {
+    display: flex;
+}
+
+.copyright__text {
+    font-size: 13px;
+    font-weight: 300;
+    color: #555555;
+    cursor: default;
+}
+
+.copyright__text_white {
+    color: #959595;
+}
+
+.copyright__text_margin-r_0{
+    margin-right: 0;
+}
+
+.copyright__link {
+    text-decoration: none;
+    color: #555555;
+}
+
+.copyright__link_gold {
+    color: #c7b299;
+}
+
+
+.copyright__link:hover {
+    color:#959595;
+}
+
+.copyright__link_gold:hover {
+    color: #ffe5c5;
+}

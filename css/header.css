@@ -19,10 +19,14 @@
 
 .header__logo {
     display: flex;
-    height: 57px;
-    width: 185px;
-    margin: 0;
+    align-items: center;
     text-decoration: none;
+}
+
+.logo__img {
+    display: block;
+    width: 64px;
+    height: 56px;
 }
 
 .logo__name {
@@ -30,13 +34,14 @@
     font-family: 'Raleway', sans-serif;
     color: #fff;
     font-style: 500;
-    padding: 7px 0 10px;
+    margin: 0;
 }
 
 /* Nav
 ===================*/
 .nav {
     display: flex;
+    padding: 0 30px;
 }
 
 

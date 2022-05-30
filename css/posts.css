@@ -28,6 +28,7 @@
     margin: 0 -15px;
 }
 
+/* item */
 .posts__item {
     width: 33.33333%;
     padding: 0 15px;
@@ -100,9 +101,7 @@
     text-decoration: none;
 }
 
-/* Posts
-   animation
-===================*/
+/* animation */
 .posts__item:hover .posts__shadow {
     opacity: 1;
 }

@@ -65,8 +65,10 @@
     .right__back {
         display: none;
     }
-
-
+    /* Purchase */
+    .purchase__title {
+        font-size: 25px;
+    }
 
 }
 
@@ -95,6 +97,14 @@
         font-size: 14px;
         padding: 0 50px;
     }
+    /* Purchase */
+    .purchase__title {
+        font-size: 20px;
+    }
+
+    .purchase__subtitle {
+        font-size: 14px;
+    }
 
 }
 
@@ -111,6 +121,21 @@
     }
     .services__item:nth-child(4){
         height: 250px;
+    }
+    /* Purchase */
+    .purchase__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .purchase__text {
+        width: 100%;
+    }
+    .purchase__subtitle {
+        margin-bottom: 20px;
+    }
+    .purchase__button {
+        text-align: center;
+        width: 100%;
     }
 }
 

@@ -55,10 +55,9 @@
     /* Ideas */
     .ideas__title {
         font-size: 28px;
-        padding: 0 150px;
     }
     .ideas__text {
-        font-size: 14px;
+        padding: 0 100px;
     }
     .left__back {
         display: none;
@@ -90,11 +89,11 @@
     }
     /* Ideas */
     .ideas__title {
-        font-size: 20px;
+        font-size: 25px;
     }
     .ideas__text {
-        font-size: 12px;
-        padding: 0 100px;
+        font-size: 14px;
+        padding: 0 50px;
     }
 
 }
@@ -128,6 +127,15 @@
     }
     .intro__title {
         font-size: 35px;
+    }
+
+    /* Ideas */
+    .ideas__title {
+        font-size: 20px;
+    }
+    .ideas__text {
+        font-size: 14px;
+        padding: 0 25px;
     }
 
 }

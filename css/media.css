@@ -16,14 +16,31 @@
 
 }
 
+@media (max-width: 1115px) {
+    .mobile__picture {
+        width: 0;
+    }
+    .mobile__description {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5), url(../img/Content/Mobile/iPhone_in_hand.jpg) bottom no-repeat;
+
+    }
+}
+
+
 @media (max-width: 1080px) {
+    /* Header */
     .nav {
+        display: none;
+    }
+    .right__nav__buttons {
         display: none;
     }
 }
 
 
 @media (max-width: 991px) {
+
     /* Services */
     .services__item:nth-child(1){
         height: 250px;
@@ -31,27 +48,53 @@
     .services__item:nth-child(2){
         height: 250px;
     }
-
     /* Latest Projects */
     .projects__item {
         width: 50%;
     }
+    /* Ideas */
+    .ideas__title {
+        font-size: 28px;
+        padding: 0 150px;
+    }
+    .ideas__text {
+        font-size: 14px;
+    }
+    .left__back {
+        display: none;
+    }
+    .right__back {
+        display: none;
+    }
+
+
 
 }
 
 
 @media (max-width: 767px) {
-
     /* Intro */
+    .intro {
+        height: 900px;
+    }
     .intro__overtitle {
         font-size: 26px;
     }
     .intro__title {
         font-size: 42px;
     }
+
     /* Services */
     .services__text {
         padding: 0 15px;
+    }
+    /* Ideas */
+    .ideas__title {
+        font-size: 20px;
+    }
+    .ideas__text {
+        font-size: 12px;
+        padding: 0 100px;
     }
 
 }
@@ -75,9 +118,29 @@
 
 
 @media (max-width: 480px) {
+    /* Header */
+    .logo__name {
+        display: none;
+    }
+
+    .intro__overtitle {
+        font-size: 20px;
+    }
+    .intro__title {
+        font-size: 35px;
+    }
 
 }
 
 @media (max-width: 320px) {
-
+    /* Intro */
+    .intro__overtitle {
+        font-size: 16px;
+    }
+    .intro__title {
+        font-size: 28px;
+    }
+    .intro__text {
+        font-size: 12px;
+    }
 }

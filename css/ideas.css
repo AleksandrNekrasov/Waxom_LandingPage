@@ -11,7 +11,8 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 1230px;
+    max-width: 1260px;
+
 }
 
 .ideas__title {
@@ -22,37 +23,49 @@
 }
 
 .ideas__text {
+    align-items: center;
     font-size: 16px;
     font-weight: 300;
-    line-height: 1.75;
-    padding: 0 200px;
-
     margin-bottom: 35px;
+    line-height: 1.75;
+
+    padding: 0 200px;
 }
 
 .ideas__immages {
     position: relative;
     max-height: 482px;
     overflow: hidden;
+    bottom: -0.5px;
 }
 
 .front {
+    display: flex;
+    justify-content: center;
     position: relative;
     z-index: 2;
+    padding: 0 15px;
+}
+
+.main__image {
+    display: block;
+    max-width: 100%;
 }
 
 .left__back {
+    display: block;
     max-height: 400px;
     position: absolute;
-    bottom: 0px;
-    left: 0;
+    bottom: -1px;
+    left: 15px;
     z-index: 1;
 }
 
 .right__back {
+    display: block;
     max-height: 400px;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -1px;
+    right: 15px;
     z-index: 1;
 }

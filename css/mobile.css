@@ -10,15 +10,16 @@
 .mobile__picture {
     width: 40%;
     position: relative;
-    height: 695px;
+    height: 696px;
+
 }
 
 .mobile__img {
+    display: block;
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: 1;
-
 }
 
 .mobile__description {
@@ -60,7 +61,7 @@
     height: 21px;
 }
 
-.text {
+.mobile__text-list {
     margin: 0;
     font-size: 16px;
     font-weight: 300;

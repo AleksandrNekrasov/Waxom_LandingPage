@@ -9,13 +9,15 @@
 .counters__inner {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
 
 }
 
 .counters__item {
     text-align: center;
     width: 20%;
-    padding: 0 33px;
+    padding: 0;
 }
 
 .counters__item:first-child {

@@ -8,6 +8,7 @@
     height: 705px;
     background: url(../img/Content/Video/background-photo.jpg) center no-repeat;
     background-size: cover;
+    padding: 0 15px;
 }
 
 .video__inner {
@@ -41,12 +42,16 @@
     margin-bottom: 25px;
 }
 
+
 .video__subtitle {
     font-size: 16px;
     font-weight: 300;
     color: #fff;
     line-height: 1.7;
     margin-bottom: 40px;
+    padding: 0 20%;
+
+    word-wrap: break-word;
 }
 
 .video__time {

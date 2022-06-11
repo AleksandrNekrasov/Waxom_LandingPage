@@ -3,9 +3,12 @@
 
 /* main */
 .projects__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     width: 100%;
-    text-align: center;
-    padding: 80px 0;
+    padding: 70px 0;
 }
 
 .projects__title {
@@ -21,6 +24,7 @@
     font-weight: 300;
     margin-bottom: 40px;
     padding: 0 70px;
+    line-height: 1.75;
 }
 
 

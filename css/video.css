@@ -35,24 +35,15 @@
 }
 
 .video__titie {
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
     font-weight: 500;
     color: #fff;
-    margin-bottom: 25px;
 }
 
 
 .video__subtitle {
-    font-size: 16px;
-    font-weight: 300;
     color: #fff;
-    line-height: 1.7;
-    margin-bottom: 40px;
-    padding: 0 20%;
-
-    word-wrap: break-word;
 }
+
 
 .video__time {
     color: #c7b299;

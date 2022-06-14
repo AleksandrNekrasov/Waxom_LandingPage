@@ -11,23 +11,20 @@
     flex-wrap: wrap;
     padding: 140px 0;
     align-items: center;
+
 }
 
 .partners__item {
+    display: flex;
+    justify-content: center;
     width: 25%;
-    padding: 0 42.5px;
-}
 
-.partners__item:first-child{
-    padding-left: 27px;
-}
-
-.partners__item:last-child{
-    padding-right: 27px;
+    padding: 0 15px;
 }
 
 .partners__logo {
     display: block;
     width: 100%;
+    max-width: 211px;
     height: auto;
 }

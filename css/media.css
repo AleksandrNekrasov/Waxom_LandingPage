@@ -16,6 +16,7 @@
 
 }
 
+/* Only for Mobile part */
 @media (max-width: 1167px) {
     /* Mobile */
     .mobile__picture {
@@ -68,6 +69,7 @@
 }
 
 @media (max-width: 991px) {
+
     /* Services */
     .services__item:nth-child(1){
         height: 250px;
@@ -81,13 +83,6 @@
         width: 50%;
     }
 
-    /* Ideas */
-    .ideas__title {
-        font-size: 28px;
-    }
-    .ideas__text {
-        padding: 0 100px;
-    }
     .left__back {
         display: none;
     }
@@ -100,18 +95,13 @@
         font-size: 25px;
     }
 
-    /* Video */
-    .video__subtitle {
-        padding: 0 15%;
-    }
-
     /* Counters */
     .counters__value {
         font-size: 40px;
     }
 
     .counters__name {
-        font-size: 12px;
+        font-size: 13px;
     }
 
 }
@@ -134,13 +124,8 @@
     }
 
     /* Ideas */
-    .ideas__title {
-        font-size: 25px;
-    }
-
     .ideas__text {
-        font-size: 14px;
-        padding: 0 50px;
+        padding: 0 30px;
     }
 
     /* Purchase */
@@ -152,23 +137,24 @@
         font-size: 14px;
     }
 
-    /* Latest projects */
-    .projects__subtitle {
-        font-size: 14px;
-        padding: 0 40px;
-    }
-
     /* Counters */
     .counters__value {
         font-size: 35px;
     }
 
     .counters__name {
-        font-size: 10px;
+        font-size: 12px;
     }
 
-    /* Posts */
+    /* Partners */
 
+    .partners__item {
+        width: 50%;
+    }
+
+    .partners__item:nth-child(1), .partners__item:nth-child(2) {
+        margin-bottom: 100px;
+    }
 
 }
 
@@ -231,11 +217,18 @@
 }
 
 @media (max-width: 480px) {
+    /* Main */
+    .title {
+        font-size: 25px;
+    }
+    .text {
+        font-size: 15px;
+    }
+
     /* Header */
     .logo__name {
         display: none;
     }
-
     .intro__overtitle {
         font-size: 20px;
     }
@@ -243,28 +236,11 @@
         font-size: 35px;
     }
 
-    /* Ideas */
-    .ideas__title {
-        font-size: 25px;
-        padding: 0 10px;
-    }
-    .ideas__text {
-        font-size: 14px;
-        padding: 0 25px;
-    }
-
     /* Latest Projects */
     .projects__item {
         width: 100%;
     }
-    .projects__title {
-        font-size: 25px;
-        padding: 0 10px;
-    }
-    .projects__subtitle {
-        font-size: 14px;
-        padding: 0 15px;
-    }
+
     .projects__item:nth-child(1n+4) {
         margin-bottom: 30px;
     }
@@ -278,26 +254,14 @@
         font-size: 14px;
     }
 
-    /* Video */
-    .video__subtitle {
-        font-size: 14px;
-        padding: 0 5%;
-    }
-
     /* Mobile */
-    .mobile__title {
-        font-size: 25px;
-    }
-    .mobile__text {
-        font-size: 15px;
-        margin-bottom: 30px;
-    }
-    .mobile__text-list {
-        font-size: 14px;
-    }
 
     .mobile__list {
         padding-left: 0;
+    }
+
+    .mobile__text-list {
+        font-size: 14px;
     }
 
     .counters__item {
@@ -315,19 +279,26 @@
 
     /* Posts */
 
-
-    .posts__main-subtitle {
-        padding: 25px;
-        font-size: 15px;
-
-    }
-
     .posts__item:first-child {
         width: 100%;
     }
 
     .posts__item:nth-child(2), .posts__item:nth-child(3) {
         display: none;
+    }
+
+    /* Partners */
+
+    .partners__item {
+        width: 100%;
+    }
+
+    .partners__item:nth-child(3) {
+        margin-bottom: 100px;
+    }
+
+    .partners__item:nth-child(4) {
+        margin-bottom: 0;
     }
 
 }
@@ -344,6 +315,13 @@
         font-size: 12px;
     }
 
+    /* Ideas */
+
+    .ideas__title {
+        padding: 0 15px;
+    }
+
+
     /* Latest projects */
     .project__name {
         font-size: 18px;
@@ -351,4 +329,6 @@
     .project__theme {
         font-size: 12px;
     }
+
+
 }

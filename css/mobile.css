@@ -1,10 +1,10 @@
 /* Mobile
 ===================*/
-
 .mobile {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
+
 }
 
 .mobile__picture {

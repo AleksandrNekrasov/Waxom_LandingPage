@@ -104,6 +104,26 @@
         font-size: 13px;
     }
 
+    /* Footer */
+    .logo__name_font-size_small {
+        font-size: 30px;
+    }
+
+    .footer__item {
+        width: 50%;
+    }
+
+    .footer__item_order_2 {
+        order: 4;
+    }
+
+    .footer__item_order_4 {
+        order: 2;
+    }
+
+    .copyright__group-left {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -226,7 +246,7 @@
     }
 
     /* Header */
-    .logo__name {
+    .logo__name_display_none {
         display: none;
     }
     .intro__overtitle {
@@ -255,13 +275,12 @@
     }
 
     /* Mobile */
-
     .mobile__list {
         padding-left: 0;
     }
 
     .mobile__text-list {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .counters__item {
@@ -301,6 +320,19 @@
         margin-bottom: 0;
     }
 
+    /* Footer */
+    .footer__item {
+        width: 100%;
+    }
+
+    .copyright__group {
+        flex-direction: column;
+    }
+
+    .side-line {
+        display: none;
+    }
+
 }
 
 @media (max-width: 320px) {
@@ -321,6 +353,15 @@
         padding: 0 15px;
     }
 
+    /* Mobile */
+
+    .mobile__text {
+        font-size: 14px;
+    }
+
+    .mobile__text-list {
+        font-size: 14px;
+    }
 
     /* Latest projects */
     .project__name {
@@ -329,6 +370,5 @@
     .project__theme {
         font-size: 12px;
     }
-
 
 }

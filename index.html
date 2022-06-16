@@ -36,20 +36,26 @@
             </a>
 
             <nav class="nav" id="nav">
-                <a class="nav__link" href="#">Home</a>
-                <a class="nav__link" href="#">About Us</a>
-                <a class="nav__link" href="#">Portfolio</a>
-                <a class="nav__link" href="#">Features</a>
-                <a class="nav__link" href="#">Blog</a>
-                <a class="nav__link" href="#">Pricing</a>
-                <a class="nav__link" href="#">Shortcodes</a>
-                <a class="nav__link" href="#">Contact</a>
+                <a data-goto=".intro" class="nav__link" href="">Home</a>
+                <a data-goto=".services" class="nav__link" href="">Features</a>
+                <a data-goto=".purchase"class="nav__link" href="">Purchase</a>
+                <a data-goto=".projects" class="nav__link" href="">Portfolio</a>
+                <a data-goto=".video" class="nav__link" href="">About Us</a>
+                <a data-goto=".posts" class="nav__link" href="">Blog</a>
+                <a data-goto=".partners" class="nav__link" href="#">Partners</a>
+                <a data-goto=".footer" class="nav__link" href="#">Contact</a>
             </nav>
 
             <div class="right__nav__buttons">
                 <a class="cart__button cart__button_gold" href="#"></a>
                 <a class="search__button search__button_gold"href="#"></a>
+
+                <div class="header__burger">
+                    <span></span>
+                </div>
             </div>
+
+
 
         </div><!--/header__inner-->
     </div> <!--/container -->
@@ -79,7 +85,7 @@
                 <span class="underline"></span>
             </div>
 
-            <a class="services__link-back" href="#">
+            <a class="services__link-back">
                 <img class="services__icon" src="img/Content/Services/icon-web_app_disign-colored.png" alt="">
                 <h4 class="services__title">Web & App Design</h4>
                 <p class="services__text">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
@@ -95,7 +101,7 @@
                 <span class="underline"></span>
             </div>
 
-            <a class="services__link-back" href="#">
+            <a class="services__link-back">
                 <img class="services__icon" src="img/Content/Services/icon-development-colored.png" alt="">
                 <h4 class="services__title">Development</h4>
                 <p class="services__text">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
@@ -111,7 +117,7 @@
                 <span class="underline"></span>
             </div>
 
-            <a class="services__link-back" href="#">
+            <a class="services__link-back">
                 <img class="services__icon" src="img/Content/Services/icon-customization-colored.png" alt="">
                 <h4 class="services__title">Customization</h4>
                 <p class="services__text">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
@@ -127,7 +133,7 @@
                 <span class="underline"></span>
             </div>
 
-            <a class="services__link-back" href="#">
+            <a class="services__link-back">
                 <img class="services__icon" src="img/Content/Services/icon-marketing-colored.png" alt="">
                 <h4 class="services__title">Marketing</h4>
                 <p class="services__text">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
@@ -174,7 +180,7 @@
 
 <!-- Latest projects -->
 <div class="container">
-    <div class="projects__inner">
+    <div class="projects">
 
         <div class="title">Our Latest Projects</div> <!-- title -->
         <div class="text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
@@ -312,7 +318,7 @@
 </div>
 
 <!--  Mobile -->
-<div class="container container-mobile">
+<div class="container">
     <div class="mobile">
 
         <div class="mobile__picture">

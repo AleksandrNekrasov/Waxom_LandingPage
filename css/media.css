@@ -63,8 +63,16 @@
     .nav {
         display: none;
     }
-    .right__nav__buttons {
+
+    .search__button {
+        margin-right: 25px;
+    }
+    /* .right__nav__buttons {
         display: none;
+    } */
+
+    .header__burger {
+        display: block;
     }
 }
 
@@ -127,6 +135,9 @@
 }
 
 @media (max-width: 767px) {
+    /* Header */
+
+
     /* Intro */
     .intro {
         height: 900px;

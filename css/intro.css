@@ -8,6 +8,8 @@
     height: 1024px;
     background: #4b4a46 url("../img/intro-bg.jpg") center no-repeat;
     background-size: cover;
+
+    overflow: hidden;
 }
 
 .intro__inner {

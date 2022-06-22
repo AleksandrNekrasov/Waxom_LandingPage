@@ -68,32 +68,36 @@
         padding: 12px 0;
     }
 
+
     .nav {
         display: none;
+    }
+
+    nav._active {
+        display: block;
         position: absolute;
         right: 0;
-        top: 100%;
-
-        flex-direction: column;
-        background: rgba(0, 0 , 0, 0.8);
+        top: 80px;
         width: 100%;
-        text-align: right;
 
+        height: auto;
         overflow: auto;
+
+        background: rgba(0, 0 , 0, 0.8);
+        text-align: right;
+    }
+
+    .nav__inner {
+        flex-direction: column;
+    }
+
+    .nav__inner li {
+        padding: 15px 0;
+        margin-right: 0;
     }
 
     .nav__link {
         font-size: 18px;
-        padding: 15px 0;
-
-    }
-
-    ._active {
-        display: flex;
-    }
-
-    .nav__link:first-child {
-        margin-left: 28px;
     }
 
     .search__button {

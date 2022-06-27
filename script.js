@@ -3,16 +3,11 @@
 
     let header = document.getElementById('header');
     let scrollPos;
-    let windowHeight;
+    let navLinks = document.querySelectorAll('.nav__link[data-goto]');
+    let burgerMenu = document.querySelector('.header__burger');
+    let navMenu = document.querySelector('.nav');
 
-    const navLinks = document.querySelectorAll('.nav__link[data-goto]');
-    const burgerMenu = document.querySelector('.header__burger');
-    const navMenu = document.querySelector('.nav');
-
-
-
-
-    //fixed navigation
+    //fixed navigation after scrolling down
     window.addEventListener('scroll', showFixedNav, false);
     window.addEventListener('load', showFixedNav, false);
 
@@ -26,7 +21,7 @@
         };
     }
 
-    //auto-scrolling navigation
+    //auto-scrolling navigation after clip on nav item
     if (navLinks.length > 0) {
 
         navLinks.forEach(navLink => {
@@ -38,7 +33,7 @@
 
             if (navLink.dataset.goto && document.querySelector(navLink.dataset.goto)) {
                 const gotoBlock = document.querySelector(navLink.dataset.goto);
-                const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - 79; // - document.querySelector('header').offsetHeight
+                const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - 80;
 
                 if(burgerMenu.classList.contains('_active')) {
                     document.body.classList.remove('_lock');
@@ -66,29 +61,20 @@
     };
 
 
-    //operation after the window is resized
-    window.addEventListener('load', adjustmentNav, false);
-    window.addEventListener('resize', adjustmentNav,false)
+    //add fixed height value for activation overflow scrolling,
+    //when a mobile device in hozintal pos
+    window.addEventListener('load', changeHeight, false);
+    window.addEventListener('resize', changeHeight, false)
 
-    function adjustmentNav() {
-        windowHeight = window.outerHeight;
-        console.log(windowHeight);
+    function changeHeight() {
+        let currNavBarHeight = window.outerHeight - header.offsetHeight;
 
-        //for activation overflow scrolling when device in horizontal pos
-        if (windowHeight < 450) {
-            navMenu.style.height = '450px';
+        if (window.outerHeight < 450) {
+            navMenu.style.height = `${currNavBarHeight}px`;
         } else {
             navMenu.style.height = 'auto';
         }
-
-        //hide burger menu when window is resized
-        // if (burgerMenu.classList.contains('_active')) {
-        //     document.body.classList.remove('_lock');
-        //     burgerMenu.classList.remove('_active');
-        //     navMenu.classList.remove('_active');
-        // }
     };
-
 
 })();
 

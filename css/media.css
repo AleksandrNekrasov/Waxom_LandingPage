@@ -73,18 +73,20 @@
         display: none;
     }
 
-    nav._active {
+    .nav._active {
         display: block;
         position: absolute;
         right: 0;
         top: 80px;
         width: 100%;
+        z-index: 5;
 
         height: auto;
         overflow: auto;
 
         background: rgba(0, 0 , 0, 0.8);
         text-align: right;
+
     }
 
     .nav__inner {
@@ -108,6 +110,8 @@
         cursor: pointer;
         display: block;
     }
+
+
 }
 
 @media (max-width: 991px) {

@@ -70,16 +70,12 @@
 
 
     .nav {
-        display: none;
-    }
-
-    .nav._active {
         display: block;
         position: absolute;
-        right: 0;
+        left: -100%;
+        /* right: -100%; */
         top: 80px;
         width: 100%;
-        z-index: 5;
 
         height: auto;
         overflow: auto;
@@ -87,6 +83,12 @@
         background: rgba(0, 0 , 0, 0.8);
         text-align: right;
 
+        transition: all 0.2s ease;
+    }
+
+    .nav._active {
+        /* display: block; */
+        left: 0;
     }
 
     .nav__inner {
@@ -107,7 +109,6 @@
     }
 
     .header__burger {
-        cursor: pointer;
         display: block;
     }
 

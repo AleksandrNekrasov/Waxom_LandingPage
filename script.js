@@ -13,6 +13,7 @@
 
     function showFixedNav() {
         scrollPos = window.scrollY;
+        console.log(scrollPos);
 
         if (scrollPos > 10) {
             header.classList.add('header-fixed');

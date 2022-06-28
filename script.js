@@ -2,10 +2,12 @@
 (function() {
 
     let header = document.getElementById('header');
-    let scrollPos;
+    let searchButton = document.getElementById('search__button');
+    let searchBox = document.getElementById('search-box');
     let navLinks = document.querySelectorAll('.nav__link[data-goto]');
     let burgerMenu = document.querySelector('.header__burger');
     let navMenu = document.querySelector('.nav');
+    let scrollPos;
 
     //fixed navigation after scrolling down if sceen size >= 991px
     window.addEventListener('scroll', showFixedNav, false);
@@ -51,12 +53,14 @@
         }
     };
 
-    //menu burger
+    //menu burger appearance
     if (burgerMenu) {
         burgerMenu.addEventListener('click', function(e) {
             document.body.classList.toggle('_lock');
             burgerMenu.classList.toggle('_active');
             navMenu.classList.toggle('_active');
+
+            searchBox.classList.remove('search-box_active');
         })
     };
 
@@ -72,6 +76,18 @@
         } else {
             navMenu.style.height = 'auto';
         }
+    };
+
+    //search box appearance
+    if(searchButton) {
+        searchButton.addEventListener('click', function(e){
+            searchButton.classList.toggle('search__button_active');
+            searchBox.classList.toggle('search-box_active')
+
+            document.body.classList.remove('_lock');
+            burgerMenu.classList.remove('_active');
+            navMenu.classList.remove('_active');
+        })
     };
 
 })();

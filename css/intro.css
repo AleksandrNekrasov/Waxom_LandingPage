@@ -44,38 +44,6 @@
     margin-bottom: 45px;
 }
 
-.cart__button {
-    display: block;
-    height: 24px;
-    width: 18px;
-    transition: all .1s linear;
-
-}
-
-.cart__button_gold {
-    background: url(../img/Header/icon-cart.png);
-}
-
-.cart__button_gold:hover {
-    background: url(../img/Header/icon-cart-gold.png);
-}
-
-
-.search__button {
-    display: block;
-    height: 24px;
-    width: 24px;
-    transition: all .1s linear;
-}
-
-.search__button_gold {
-    background: url(../img/Header/icon-search.png);
-}
-
-.search__button_gold:hover {
-    background: url(../img/Header/icon-search-gold.png);
-}
-
 
 /* Button
 ===================*/

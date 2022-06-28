@@ -7,15 +7,14 @@
     let burgerMenu = document.querySelector('.header__burger');
     let navMenu = document.querySelector('.nav');
 
-    //fixed navigation after scrolling down
+    //fixed navigation after scrolling down if sceen size >= 991px
     window.addEventListener('scroll', showFixedNav, false);
     window.addEventListener('load', showFixedNav, false);
 
     function showFixedNav() {
         scrollPos = window.scrollY;
-        console.log(scrollPos);
 
-        if (scrollPos > 10) {
+        if (scrollPos > 10 && document.body.clientWidth >= 991) {
             header.classList.add('header-fixed');
         } else {
             header.classList.remove('header-fixed');
@@ -62,16 +61,14 @@
     };
 
 
-    //add fixed height value for activation overflow scrolling,
-    //when a mobile device in hozintal pos
+    // add fixed height value for activation overflow scrolling,
+    // when a mobile device in hozintal pos
     window.addEventListener('load', changeHeight, false);
     window.addEventListener('resize', changeHeight, false)
 
     function changeHeight() {
-        let currNavBarHeight = window.outerHeight - header.offsetHeight;
-
         if (window.outerHeight < 450) {
-            navMenu.style.height = `${currNavBarHeight}px`;
+            navMenu.style.height = `${window.outerHeight}px`;
         } else {
             navMenu.style.height = 'auto';
         }

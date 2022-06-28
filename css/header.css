@@ -129,7 +129,7 @@
 ===================*/
 
 .search-box {
-    display: block;
+    display: flex;
     position: absolute;
     top: 42px;
     right: 0;
@@ -158,10 +158,28 @@
     width: 100%;
 }
 
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: auto;
+    /* background-image: url(../img/lupa.svg) no-repeat;
+    background-size: contain; */
+}
 
 input:focus {
     outline: none;
 }
+
+.search-button {
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* Burger
 ===================*/

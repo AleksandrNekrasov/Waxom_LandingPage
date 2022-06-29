@@ -5,9 +5,42 @@
     let searchButton = document.getElementById('search__button');
     let searchBox = document.getElementById('search-box');
     let navLinks = document.querySelectorAll('.nav__link[data-goto]');
+    let navLinkClass = document.querySelectorAll('.nav__link');
     let burgerMenu = document.querySelector('.header__burger');
     let navMenu = document.querySelector('.nav');
     let scrollPos;
+    let isMobile = {
+        Android: function () {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function () {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function () {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function () {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function () {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function () {
+            return (
+                    isMobile.Android()
+                    || isMobile.BlackBerry()
+                    || isMobile.iOS()
+                    || isMobile.Opera()
+                    || isMobile.Windows()
+                    );
+        }
+    };
+
+    if(isMobile.any()) {
+        document.body.classList.add('_touch');
+    } else {
+        document.body.classList.add('_pc');
+    };
 
     //fixed navigation after scrolling down if sceen size >= 991px
     window.addEventListener('scroll', showFixedNav, false);
@@ -23,7 +56,7 @@
         };
     }
 
-    //auto-scrolling navigation after clip on nav item
+    //auto-scrolling navigation after click on nav item
     if (navLinks.length > 0) {
 
         navLinks.forEach(navLink => {
@@ -33,16 +66,25 @@
         function onNavLinkClick(e) {
             const navLink = e.target;
 
+            for (let i = 0; i < navLinks.length; i++) {
+                if (navLinks[i].classList.contains('_active')) {
+                    navLinks[i].classList.remove('_active');
+                }
+            };
+
+            navLink.classList.add('_active');
+
             if (navLink.dataset.goto && document.querySelector(navLink.dataset.goto)) {
                 const gotoBlock = document.querySelector(navLink.dataset.goto);
                 const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - 80;
+
+                console.log(gotoBlock.getBoundingClientRect().top);
 
                 if(burgerMenu.classList.contains('_active')) {
                     document.body.classList.remove('_lock');
                     burgerMenu.classList.remove('_active');
                     navMenu.classList.remove('_active');
                 }
-
 
                 window.scrollTo({
                     top: gotoBlockValue,
@@ -61,6 +103,7 @@
             navMenu.classList.toggle('_active');
 
             searchBox.classList.remove('search-box_active');
+            searchButton.classList.remove('search__button_active');
         })
     };
 
@@ -89,6 +132,9 @@
             navMenu.classList.remove('_active');
         })
     };
+
+
+    console.log(navLinks[0].classList.contains('_active'));
 
 })();
 

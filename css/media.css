@@ -58,7 +58,6 @@
     }
 }
 
-
 @media (max-width: 991px) {
     /* Header */
     .header {
@@ -104,7 +103,6 @@
     }
 
     .nav._active {
-        /* display: block; */
         top: 0;
     }
 

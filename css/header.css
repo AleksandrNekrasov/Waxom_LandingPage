@@ -66,6 +66,10 @@
     transition: opacity .1s linear;
 }
 
+.nav__link._active {
+    color: #c0b199;
+}
+
 .nav__link:first-child {
     margin-left: 0;
 }
@@ -103,10 +107,9 @@
     background: url(../img/Header/icon-cart.png);
 }
 
-.cart__button_gold:hover {
+body._pc .cart__button_gold:hover {
     background: url(../img/Header/icon-cart-gold.png);
 }
-
 
 .search__button {
     display: block;
@@ -120,8 +123,11 @@
     background: url(../img/Header/icon-search.png);
 }
 
-.search__button_gold:hover,
 .search__button_active  {
+    background: url(../img/Header/icon-search-gold.png);
+}
+
+body._pc .search__button_gold:hover {
     background: url(../img/Header/icon-search-gold.png);
 }
 
@@ -129,20 +135,17 @@
 ===================*/
 
 .search-box {
-    display: flex;
+    display: none;
     position: absolute;
     top: 42px;
-    right: 0;
+    right: 0%;
     background: rgba(0, 0 , 0, 0.8);
     border-radius: 5px;
     width: 200px;
-
-    opacity: 0;
-    transition: all 0.2s linear;
 }
 
 .search-box_active {
-    opacity: 1;
+    display: flex;
 }
 
 .search-box input {
@@ -164,8 +167,6 @@
     justify-content: center;
     width: 35px;
     height: auto;
-    /* background-image: url(../img/lupa.svg) no-repeat;
-    background-size: contain; */
 }
 
 input:focus {
@@ -244,6 +245,7 @@ input:focus {
     position: fixed;
     height: 80px;
     background: #555555 url("../img/header-bg.jpg") center no-repeat;
+    background-size: cover;
 
     box-shadow: 0 0px 30px 0 rgba(0, 0, 0, .7);
 }

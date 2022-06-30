@@ -4,6 +4,8 @@
     let header = document.getElementById('header');
     let searchButton = document.getElementById('search__button');
     let searchBox = document.getElementById('search-box');
+    let cartButton = document.querySelector('.cart__button');
+    let cartBox = document.querySelector('.cart-contents');
     let navLinks = document.querySelectorAll('.nav__link[data-goto]');
     let burgerMenu = document.querySelector('.header__burger');
     let navMenu = document.querySelector('.nav');
@@ -93,15 +95,18 @@
             burgerMenu.classList.toggle('_active');
             navMenu.classList.toggle('_active');
 
-            searchBox.classList.remove('search-box_active');
-            searchButton.classList.remove('search__button_active');
+            searchBox.classList.remove('_active');
+            searchButton.classList.remove('_active');
+
+            cartButton.classList.remove('_active');
+            cartBox.classList.remove('_active');
         })
     };
 
     // add fixed height value for activation overflow scrolling,
     // when a mobile device in hozintal pos
     window.addEventListener('load', changeHeight, false);
-    window.addEventListener('resize', changeHeight, false)
+    window.addEventListener('resize', changeHeight, false);
     function changeHeight() {
         if (window.outerHeight < 450) {
             navMenu.style.height = `${window.outerHeight}px`;
@@ -110,17 +115,38 @@
         }
     };
 
-    //search box appearance
+    //search form appearance
     if(searchButton) {
         searchButton.addEventListener('click', function(e){
-            searchButton.classList.toggle('search__button_active');
-            searchBox.classList.toggle('search-box_active')
+            searchButton.classList.toggle('_active');
+            searchBox.classList.toggle('_active')
 
             document.body.classList.remove('_lock');
             burgerMenu.classList.remove('_active');
             navMenu.classList.remove('_active');
+
+            cartButton.classList.remove('_active');
+            cartBox.classList.remove('_active');
         })
     };
+
+
+
+    //cart box appearance
+    if(cartButton) {
+        cartButton.addEventListener('click', function(e) {
+            cartButton.classList.toggle('_active');
+            cartBox.classList.toggle('_active');
+
+            document.body.classList.remove('_lock');
+            burgerMenu.classList.remove('_active');
+            navMenu.classList.remove('_active');
+
+            searchButton.classList.remove('_active');
+            searchBox.classList.remove('_active')
+        });
+    }
+
 
     //hightlighting nav links when page is scrolling
     window.addEventListener('scroll', ()=> {

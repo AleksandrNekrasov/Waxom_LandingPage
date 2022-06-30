@@ -26,7 +26,6 @@
 </head>
 <body>
 
-<!-- Header -->
 <header class="header" id="header">
     <div class="container">
         <div class="header__inner">
@@ -54,13 +53,13 @@
                     <li class="video-scroll">
                         <a data-goto=".video" class="nav__link" href="#">About Us</a>
                     </li>
-                    <li class="blog-scroll">
+                    <li class="posts-scroll">
                         <a data-goto=".posts" class="nav__link" href="#">Blog</a>
                     </li>
                     <li class="partners-scroll">
                         <a data-goto=".partners" class="nav__link" href="#">Partners</a>
                     </li>
-                    <li class="contact-scroll">
+                    <li class="info-scroll">
                         <a data-goto=".footer" class="nav__link" href="#">Info</a>
                     </li>
                 </ul>
@@ -68,17 +67,21 @@
             </nav>
 
             <div class="right__nav__buttons">
-                <a class="cart__button cart__button_gold" href="#"></a>
+
+                <a class="cart__button cart__button_gold"></a>
+                <div class="cart-contents">
+                    <p>Your cart is empty.</p>
+                </div>
 
                 <a class="search__button search__button_gold" id="search__button" >
                 </a>
 
                 <form action="https://www.google.com/search" class="search-box" id="search-box" method="get" name="search-box" target="_blank">
-                    <input name="search-box" type="hidden">
-                    <input autocomplete="on" class="form-control search" name="q" placeholder="Search..." required="required"  type="text">
-                    <button class="search-button" type="submit">
+                    <input name="search-box" type="hidden" >
+                    <input autocomplete="on" class="form-control search" name="q" placeholder="Type and hit Enter.." required="required"  type="text" tabindex="-1">
+                    <!-- <button class="search-button" type="submit">
                         <img class="lupa_svg" src="img/lupa.svg" alt="" height="18px">
-                    </button>
+                    </button> -->
                 </form>
 
                 <div class="header__burger">
@@ -89,7 +92,6 @@
         </div><!--/header__inner-->
     </div> <!--/container -->
 </header>
-
 
 <section id="intro-scroll">
 <!-- Intro -->
@@ -104,7 +106,6 @@
     </div>
 </div>
 </section>
-
 
 <section id="services-scroll">
 <!-- Services -->
@@ -179,7 +180,6 @@
 </div>
 </section>
 
-
 <section id="ideas-scroll">
 <!-- Ideas -->
 <div class="ideas">
@@ -215,7 +215,6 @@
     </div>
 </div>
 </section>
-
 
 <section id="projects-scroll">
 <!-- Projects -->
@@ -346,7 +345,6 @@
 </div>
 </section>
 
-
 <section id="video-scroll">
 <!-- Video Presentation -->
 <div class="video">
@@ -453,8 +451,7 @@
 </div>
 </section>
 
-
-<section id ="blog-scroll">
+<section id ="posts-scroll">
 <!--Posts-->
 <div class="container">
     <div class="posts">
@@ -524,7 +521,6 @@
 </div>
 </section>
 
-
 <section id="partners-scroll">
 <!--Partners-->
 <div class="partners">
@@ -552,8 +548,7 @@
 </div>
 </section>
 
-
-<section id="contact-scroll">
+<section id="info-scroll">
 <!--/Footer-->
 <footer class="footer">
     <div class="container">

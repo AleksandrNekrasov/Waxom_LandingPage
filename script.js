@@ -5,9 +5,10 @@
     let searchButton = document.getElementById('search__button');
     let searchBox = document.getElementById('search-box');
     let navLinks = document.querySelectorAll('.nav__link[data-goto]');
-    let navLinkClass = document.querySelectorAll('.nav__link');
     let burgerMenu = document.querySelector('.header__burger');
     let navMenu = document.querySelector('.nav');
+    let sections = document.querySelectorAll('section');
+    let navLi = document.querySelectorAll('.nav__inner li');
     let scrollPos;
     let isMobile = {
         Android: function () {
@@ -35,6 +36,7 @@
                     );
         }
     };
+
 
     if(isMobile.any()) {
         document.body.classList.add('_touch');
@@ -65,20 +67,9 @@
 
         function onNavLinkClick(e) {
             const navLink = e.target;
-
-            for (let i = 0; i < navLinks.length; i++) {
-                if (navLinks[i].classList.contains('_active')) {
-                    navLinks[i].classList.remove('_active');
-                }
-            };
-
-            navLink.classList.add('_active');
-
             if (navLink.dataset.goto && document.querySelector(navLink.dataset.goto)) {
                 const gotoBlock = document.querySelector(navLink.dataset.goto);
                 const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - 80;
-
-                console.log(gotoBlock.getBoundingClientRect().top);
 
                 if(burgerMenu.classList.contains('_active')) {
                     document.body.classList.remove('_lock');
@@ -107,12 +98,10 @@
         })
     };
 
-
     // add fixed height value for activation overflow scrolling,
     // when a mobile device in hozintal pos
     window.addEventListener('load', changeHeight, false);
     window.addEventListener('resize', changeHeight, false)
-
     function changeHeight() {
         if (window.outerHeight < 450) {
             navMenu.style.height = `${window.outerHeight}px`;
@@ -133,8 +122,31 @@
         })
     };
 
+    //hightlighting nav links when page is scrolling
+    window.addEventListener('scroll', ()=> {
+        let currentSection = '';
 
-    console.log(navLinks[0].classList.contains('_active'));
+        sections.forEach (section => {
+            const sectionTop = section.offsetTop;
+
+            if (scrollY >= (sectionTop - 200)) {
+                currentSection = section.getAttribute('id');
+            };
+        });
+
+        navLi.forEach ( li => {
+            li.classList.remove('_active');
+
+            if (li.classList.contains(currentSection) &&
+            !((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 5)) {
+                li.classList.add('_active');
+
+            } else if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 5) {
+                navLi[navLi.length - 1].classList.add('_active');
+            };
+        });
+
+    });
 
 })();
 

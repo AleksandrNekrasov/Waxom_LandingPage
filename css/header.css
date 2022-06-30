@@ -54,6 +54,11 @@
 
 .nav__inner li {
     margin-right: 25px;
+    transition: all 0.3s linear;
+}
+
+.nav__inner li._active .nav__link {
+    color: #c0b199;
 }
 
 .nav__link {
@@ -63,11 +68,7 @@
     color: #fff;
     text-decoration: none;
 
-    transition: opacity .1s linear;
-}
-
-.nav__link._active {
-    color: #c0b199;
+    transition: all .3s ease;
 }
 
 .nav__link:first-child {

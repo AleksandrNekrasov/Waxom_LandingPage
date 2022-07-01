@@ -113,11 +113,11 @@
 
 .cart-contents {
     width: 200px;
-    height: 150px;
+    height: 100px;
     position: absolute;
     text-align: center;
     top: 42px;
-    right: 70%;
+    right: 0;
     background: rgba(0, 0 , 0, 0.8);
     border-radius: 5px;
     pointer-events: none;
@@ -133,7 +133,7 @@
 
 .cart-contents p {
     padding: 10px 5px;
-    color: rgb(176, 176, 176);
+    color: #919191;
     cursor: default;
 }
 
@@ -175,13 +175,15 @@ body._pc .search__button_gold:hover {
     position: absolute;
     top: 42px;
     right: 0;
-    background: rgba(0, 0 , 0, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 5px;
-    width: 200px;
+    width: 300px;
     opacity: 0;
 
     transition: all 0.2s ease;
     pointer-events: none;
+
+    padding: 0;
 }
 
 .search-box._active {
@@ -189,15 +191,30 @@ body._pc .search__button_gold:hover {
     pointer-events: all;
 }
 
+[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-image: url(../img/Header/cross-white.png);
+    background-size: cover;
+    cursor: pointer;
+  }
+
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: #919191;
+    font-size: 14px;
+}
+
 .search-box input {
     background: transparent;
     color:rgb(227, 226, 226);
     font-size: 14px;
-    font-weight: 500;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
     border: none;
-    padding: 7px;
+    padding: 9px 9px 9px 12px;
 
     width: 100%;
 }

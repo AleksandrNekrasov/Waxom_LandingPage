@@ -32,18 +32,17 @@
 
 
 /* slides */
-
-.slide-1 .intro{
+.swiper-slide.slide-1 .intro{
     background: #4b4a46 url("../img/intro-bg-1.jpg") center no-repeat;
     background-size: cover;
 }
 
-.slide-2 .intro{
+.swiper-slide.slide-2 .intro{
     background: #4b4a46 url("../img/intro-bg-2.jpg") center no-repeat;
     background-size: cover;
 }
 
-.slide-3 .intro{
+.swiper-slide.slide-3 .intro{
     background: #4b4a46 url("../img/intro-bg-3.jpg") center no-repeat;
     background-size: cover;
 }

@@ -11,6 +11,7 @@
     let navMenu = document.querySelector('.nav');
     let sections = document.querySelectorAll('section');
     let navLi = document.querySelectorAll('.nav__inner li');
+    let intro = document.querySelectorAll('.intro');
     let scrollPos;
     let isMobile = {
         Android: function () {
@@ -173,6 +174,17 @@
         });
 
     });
+
+    // intro change height
+    if(window.innerHeight <= 1024) {
+        intro.forEach( elem => {
+            elem.style.height = `${window.innerHeight}px`
+        });
+    } else {
+        intro.forEach( elem => {
+            elem.style.height = '1024px'
+        });
+    };
 
 })();
 

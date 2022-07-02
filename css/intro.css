@@ -1,12 +1,11 @@
 /* Intro
 ===================*/
-
 .intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 1024px;
     overflow: hidden;
+    width: 100%;
 }
 
 .intro__inner {

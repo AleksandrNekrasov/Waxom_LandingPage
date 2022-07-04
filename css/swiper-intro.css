@@ -6,19 +6,45 @@
 
 /* button */
 
+.intro-swiper .swiper-button-prev {
+    left: 100px;
+    opacity: 0.3;
+    transition: opacity .3s linear;
+}
+
+.intro-swiper .swiper-button-prev:hover {
+    opacity: 1;
+}
+
+.intro-swiper .swiper-button-next {
+    right: 100px;
+    opacity: 0.3;
+    transition: opacity .3s linear;
+}
+
+.intro-swiper .swiper-button-next:hover {
+    opacity: 1;
+}
+
+
+
 .intro-swiper .swiper-button-prev::after,
 .intro-swiper .swiper-button-next::after {
-    color: rgb(184, 183, 183);
+    color: rgb(183, 183, 183);
     font-size: 60px;
 }
 
-.intro-swiper .swiper-button-prev::after {
-    margin-left: 100px;
+
+
+
+body._touch .intro-swiper .swiper-button-prev {
+    display: none;
 }
 
-.intro-swiper .swiper-button-next::after {
-    margin-right: 100px;
+body._touch .intro-swiper .swiper-button-next {
+    display: none;
 }
+
 
 /* pagination */
 

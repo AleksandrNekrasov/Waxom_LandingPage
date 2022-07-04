@@ -2,6 +2,8 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    speed: 800,
+    effect: 'fade',
 
     // If we need pagination
     pagination: {
@@ -9,10 +11,16 @@ const swiper = new Swiper('.swiper', {
       clickable: 'true',
     },
 
-    // Navigation arrows
+    // Navigation arrow
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
 
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+
 });
+

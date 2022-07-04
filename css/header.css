@@ -108,7 +108,8 @@
     margin-right: 25px;
 }
 
-.cart__button._active  {
+body._pc .cart__button._active,
+body._touch .cart__button._active   {
     background: url(../img/Header/icon-cart-gold.png);
 }
 
@@ -157,12 +158,13 @@ body._pc .cart__button_gold:hover {
     cursor: pointer;
 }
 
-.search__button_gold {
-    background: url(../img/Header/icon-search.png);
+body._pc .search__button._active,
+body._touch .search__button._active   {
+    background: url(../img/Header/icon-search-gold.png);
 }
 
-.search__button._active  {
-    background: url(../img/Header/icon-search-gold.png);
+.search__button_gold {
+    background: url(../img/Header/icon-search.png);
 }
 
 body._pc .search__button_gold:hover {
@@ -335,3 +337,10 @@ input:focus {
     background: url(../img/Header/icon-search-grey.png);
 }
 
+.header-fixed .cart-contents  {
+    top: 65px;
+}
+
+.header-fixed .search-box {
+    top: 65px;
+}

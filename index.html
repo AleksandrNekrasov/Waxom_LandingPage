@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/ideas.css">
     <link rel="stylesheet" href="css/purchase-line.css">
-    <link rel="stylesheet" href="css/latest_projects.css">
+    <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/video.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/counters.css">
@@ -268,25 +268,25 @@
 
         <div class="projects__buttons"> <!-- buttons -->
             <div class="projects__buttons__item">
-                <a href="" class="projects__btn projects__btn--all projects__btn--gold">All</a>
+                <a  class="projects__btn projects__btn--all projects__btn--gold _active" id="btn_all">All</a>
             </div>
             <div class="projects__buttons__item">
-                <a href="" class="projects__btn projects__btn--gold">Web Design</a>
+                <a class="projects__btn projects__btn--gold" id="btn_design">Web Design</a>
+            </div>
+            <div class="projects__buttons__item" >
+                <a class="projects__btn projects__btn--gold" id="btn_mob_app">Mobile App</a>
+            </div>
+            <div class="projects__buttons__item" >
+                <a class="projects__btn projects__btn--gold" id="btn_illustration">Illustration</a>
             </div>
             <div class="projects__buttons__item">
-                <a href="" class="projects__btn projects__btn--gold">Mobile App</a>
-            </div>
-            <div class="projects__buttons__item">
-                <a href="" class="projects__btn projects__btn--gold">Illustration</a>
-            </div>
-            <div class="projects__buttons__item">
-                <a href="" class="projects__btn projects__btn--gold">Photography</a>
+                <a class="projects__btn projects__btn--gold" id="btn_photo">Photography</a>
             </div>
         </div>
 
         <div class="projects__area">
 
-            <div class="projects__item"><!-- item-1 -->
+            <div class="projects__item projects-photo"><!-- item-1 -->
                 <div class="projects__photo">
                     <img class="projects__img" src="img/Content/Latest_Projects/project-1.jpg" alt="">
                     <div class="projects__hover">
@@ -301,7 +301,7 @@
                 </div>
             </div>
 
-            <div class="projects__item"><!-- item-2 -->
+            <div class="projects__item projects-design"><!-- item-2 -->
                 <div class="projects__photo">
                     <img class="projects__img" src="img/Content/Latest_Projects/project-2.jpg" alt="">
                     <div class="projects__hover">
@@ -316,7 +316,7 @@
                 </div>
             </div>
 
-            <div class="projects__item"><!-- item-3 -->
+            <div class="projects__item projects-photo"><!-- item-3 -->
                 <div class="projects__photo">
                     <img class="projects__img" src="img/Content/Latest_Projects/project-3.jpg" alt="">
                     <div class="projects__hover">
@@ -331,7 +331,7 @@
                 </div>
             </div>
 
-            <div class="projects__item"><!-- item-4 -->
+            <div class="projects__item projects-photo"><!-- item-4 -->
                 <div class="projects__photo">
                     <img class="projects__img" src="img/Content/Latest_Projects/project-4.jpg" alt="">
                     <div class="projects__hover">
@@ -346,7 +346,7 @@
                 </div>
             </div>
 
-            <div class="projects__item"><!-- item-5 -->
+            <div class="projects__item projects-design"><!-- item-5 -->
                 <div class="projects__photo">
                     <img class="projects__img" src="img/Content/Latest_Projects/project-5.jpg" alt="">
                     <div class="projects__hover">
@@ -361,7 +361,7 @@
                 </div>
             </div>
 
-            <div class="projects__item"><!-- item-6 -->
+            <div class="projects__item projects-photo"><!-- item-6 -->
                 <div class="projects__photo">
                     <img class="projects__img" src="img/Content/Latest_Projects/project-6.jpg" alt="">
                     <div class="projects__hover">
@@ -374,6 +374,10 @@
                     <h4 class="project__name project__name_white">Usus Legentis Videntur</h4>
                     <p class="project__theme project__theme_gold">Photography, Holiday</p>
                 </div>
+            </div>
+
+            <div class="projects__empty" id="projects_empty">
+                <p class="projects__empty__text">Sorry, there are no projects in this category yet.<p>
             </div>
 
 
@@ -726,9 +730,12 @@
 
 <!--JavaScript-->
 <script src="js/menu.js"></script>
+
 <!-- https://swiperjs.com/ -->
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/swiper-intro.js"></script>
+
+<script src="js/projects.js"></script>
 
 </body>
 </html>

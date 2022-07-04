@@ -144,6 +144,14 @@
         display: block;
     }
 
+    .cart-contents  {
+        top: 65px;
+    }
+
+    .search-box {
+        top: 65px;
+    }
+
     /* Intro */
 
     .intro-swiper .swiper-button-prev::after {

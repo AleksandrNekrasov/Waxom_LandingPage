@@ -8,12 +8,14 @@
     let btnPhoto = document.getElementById('btn_photo');
     let projectsEmpty = document.getElementById('projects_empty');
 
-    let allPorjectsItems = document.querySelectorAll('.projects__item')
+    let allProjectsItems = document.querySelectorAll('.projects__item')
     let projectsPhoto = document.querySelectorAll('.projects-photo');
     let projectsDesign = document.querySelectorAll('.projects-design');
 
+
+
     if(btnAll.classList.contains('_active')) {
-        allPorjectsItems.forEach( project => {
+        allProjectsItems.forEach( project => {
             project.classList.add('_active');
         });
 
@@ -27,7 +29,7 @@
         projectsEmpty.classList.remove('_active');
         btnAll.classList.add('_active');
 
-        allPorjectsItems.forEach( project => {
+        allProjectsItems.forEach( project => {
             project.classList.add('_active');
         });
 
@@ -41,7 +43,7 @@
         projectsEmpty.classList.remove('_active');
         btnDesign.classList.add('_active');
 
-        allPorjectsItems.forEach( project => {
+        allProjectsItems.forEach( project => {
             project.classList.remove('_active');
         });
 
@@ -58,7 +60,7 @@
         projectsEmpty.classList.remove('_active');
         btnPhoto.classList.add('_active');
 
-        allPorjectsItems.forEach( project => {
+        allProjectsItems.forEach( project => {
             project.classList.remove('_active');
         });
 
@@ -74,12 +76,12 @@
         btnPhoto.classList.remove('_active');
         btnMobApp.classList.add('_active');
 
-        allPorjectsItems.forEach( project => {
+        allProjectsItems.forEach( project => {
             project.classList.remove('_active');
         });
 
         projectsEmpty.classList.add('_active');
-    })
+    });
 
     btnIllustr.addEventListener('click', function(e){
         btnAll.classList.remove('_active');
@@ -88,12 +90,20 @@
         btnMobApp.classList.remove('_active');
         btnIllustr.classList.add('_active');
 
-        allPorjectsItems.forEach( project => {
+        allProjectsItems.forEach( project => {
             project.classList.remove('_active');
         });
 
         projectsEmpty.classList.add('_active');
-    })
+    });
 
+
+    // allProjectsItems.forEach( project => {
+    //     if(project.classList.contains('_active')){
+    //         project.style.display = 'block';
+    //     } else if  (project.style.opacity == '0'){
+    //         project.style.display = 'none';
+    //     }
+    // });
 
 }())

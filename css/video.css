@@ -24,6 +24,7 @@
 
     position: relative;
     margin-bottom: 40px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .icon__play {
@@ -32,7 +33,18 @@
     position: absolute;
     top: 15px;
     left: 15px;
+    background: url(../img/Content/Video/icon-play.png) center no-repeat;
+
+    transition: all 0.2s linear;
+    cursor: pointer;
+
 }
+
+
+.icon__play:hover {
+    background: url(../img/Content/Video/icon-play-gold.png) center no-repeat;
+}
+
 
 .video__titie {
     font-weight: 500;

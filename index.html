@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/swiper-intro.css">
+    <link rel="stylesheet" href="css/popup-video.css">
 
     <title>Waxom</title>
 
@@ -395,9 +396,9 @@
 <!-- Video Presentation -->
 <div class="video">
     <div class="video__inner">
-        <a class="video__playbtn" href="#">
-            <img class="icon__play" src="img/Content/Video/icon-play.png" alt="">
-        </a>
+        <div class="video__playbtn">
+            <a class="icon__play"></a>
+        </div>
         <div class="video__titie title">Waxom Video Presentation</div>
         <div class="video__subtitle text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</div>
         <p class="video__time">03:26</p>
@@ -728,6 +729,16 @@
 </footer>
 </section>
 
+<div class="popup-video">
+    <div class="popup-video__body">
+        <div class="popup-video__content">
+            <a class="popup-video__close"></a>
+            <iframe class="popup-video__video" src="" frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
+
 <!--JavaScript-->
 <script src="js/menu.js"></script>
 
@@ -736,6 +747,7 @@
 <script src="js/swiper-intro.js"></script>
 
 <script src="js/projects.js"></script>
+<script src="js/popup-video.js"></script>
 
 </body>
 </html>

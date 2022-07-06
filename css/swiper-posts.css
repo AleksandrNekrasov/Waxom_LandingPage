@@ -1,0 +1,56 @@
+.posts__elements .swiper-posts {
+    width: 100%;
+    height: auto;
+}
+
+.posts__elements .swiper-button-prev::after {
+    display: none;
+}
+
+.posts__elements .swiper-button-next::after{
+    display: none;
+}
+
+
+/* buttons appear only in the PC */
+
+body._pc .posts__elements .swiper-button-prev  {
+    display: block;
+    height: 100%;
+    position: initial;
+    background: url(../img/Content/Posts/arrow-left.png) center no-repeat;
+
+    transition: background 0.2s linear;
+    margin-right: 5px;
+}
+
+body._pc .posts__elements .swiper-button-prev:hover  {
+    background: url(../img/Content/Posts/arrow-left-gold.png) center no-repeat;
+}
+
+body._pc .posts__elements .swiper-button-next  {
+    display: block;
+    height: 100%;
+    position: initial;
+    background: url(../img/Content/Posts/arrow-right.png) center no-repeat;
+
+    transition: background 0.2s linear;
+}
+
+body._pc .posts__elements .swiper-button-next:hover  {
+    background: url(../img/Content/Posts/arrow-right-gold.png) center no-repeat;
+}
+
+body._pc .posts__elements .swiper-pagination-bullet {
+    background-color: #c7b299;
+}
+
+/* mobile devisec have paggination only without buttons */
+
+body._touch .posts__elements .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #c7b299;
+}

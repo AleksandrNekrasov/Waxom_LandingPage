@@ -1,4 +1,4 @@
-.swiper {
+.intro-swiper .swiper {
     max-width: 100%;
     height: auto;
 }
@@ -58,17 +58,17 @@ body._touch .intro-swiper .swiper-button-next {
 
 
 /* slides */
-.swiper-slide.slide-1 .intro{
+.intro-swiper .swiper-slide.slide-1 .intro{
     background: #4b4a46 url("../img/intro-bg-1.jpg") center no-repeat;
     background-size: cover;
 }
 
-.swiper-slide.slide-2 .intro{
+.intro-swiper .swiper-slide.slide-2 .intro{
     background: #4b4a46 url("../img/intro-bg-2.jpg") center no-repeat;
     background-size: cover;
 }
 
-.swiper-slide.slide-3 .intro{
+.intro-swiper .swiper-slide.slide-3 .intro{
     background: #4b4a46 url("../img/intro-bg-3.jpg") center no-repeat;
     background-size: cover;
 }

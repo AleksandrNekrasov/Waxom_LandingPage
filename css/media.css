@@ -324,9 +324,6 @@
         margin-bottom: 0;
     }
 
-
-
-
 }
 
 @media (max-width: 480px) {
@@ -387,16 +384,6 @@
 
     .counters__item:last-child {
         margin-bottom: 0;
-    }
-
-    /* Posts */
-
-    .posts__item:first-child {
-        width: 100%;
-    }
-
-    .posts__item:nth-child(2), .posts__item:nth-child(3) {
-        display: none;
     }
 
     /* Partners */

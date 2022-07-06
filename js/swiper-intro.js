@@ -1,5 +1,6 @@
 'use strict';
-const swiper = new Swiper('.swiper', {
+(function(){
+  const swiper = new Swiper('.swiper-intro', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -12,7 +13,7 @@ const swiper = new Swiper('.swiper', {
       clickable: 'true',
     },
 
-    // Navigation arrow
+    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -22,6 +23,5 @@ const swiper = new Swiper('.swiper', {
       delay: 3000,
       disableOnInteraction: false,
     },
-
-});
-
+  });
+}());

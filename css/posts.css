@@ -2,10 +2,13 @@
 ===================*/
 .posts {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     align-items: center;
+    min-width: 0;
 
-    padding: 70px 0;
+
+    padding: 70px 0 60px 0;
 }
 
 .posts__main-title {
@@ -28,11 +31,13 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
+    width: 100%;
+    position: relative;
 }
 
 /* item */
 .posts__item {
-    width: 33.33333%;
+    width: 100%;
     padding: 0 15px;
     margin-bottom: 40px;
 }
@@ -160,8 +165,16 @@
 }
 
 .posts__buttons {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+body._touch .posts__buttons{
+    display: none;
 }
 
 .arrow_left {

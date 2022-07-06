@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/swiper-intro.css">
     <link rel="stylesheet" href="css/popup-video.css">
+    <link rel="stylesheet" href="css/swiper-posts.css">
 
     <title>Waxom</title>
 
@@ -97,7 +98,7 @@
 
 <div class="intro-swiper">
     <!-- Slider main container -->
-    <div class="swiper">
+    <div class="swiper swiper-intro">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
@@ -500,72 +501,92 @@
 
 <section id ="posts-scroll">
 <!--Posts-->
+<!-- <div class="posts-swiper"> -->
 <div class="container">
     <div class="posts">
         <div class="title">Recent Posts</div>
         <div class="text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
 
         <div class="posts__elements">
+            <div class="swiper swiper-posts">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide slide-1">
+                        <div class="posts__item"> <!-- item-1 -->
+                            <div class="posts__photo">
+                                <img class="posts__img" src="img/Content/Posts/photo-1.jpg" alt="" >
+                                <div class="posts__shadow"></div>
+                                <div class="calendar-icon">
+                                    <p class="calendar-icon__day-number">30</p>
+                                    <p class="calendar-icon__month-name">Sep.</p>
+                                </div>
+                            </div>
 
-            <div class="posts__item"> <!-- item-1 -->
-                <div class="posts__photo">
-                    <img class="posts__img" src="img/Content/Posts/photo-1.jpg" alt="" >
-                    <div class="posts__shadow"></div>
-                    <div class="calendar-icon">
-                        <p class="calendar-icon__day-number">30</p>
-                        <p class="calendar-icon__month-name">Sep.</p>
+                            <div class="posts__description">
+                                <h3 class="posts__name">Lorem ipsum dolor sit amet</h3>
+                                <p class="posts__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                                <a class="posts__link" href="" >Read More ⯈</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide-2">
+                        <div class="posts__item"> <!-- item-2 -->
+                            <div class="posts__photo">
+                                <img class="posts__img" src="img/Content/Posts/photo-2.jpg" alt="" >
+                                <div class="posts__shadow"></div>
+                                <div class="calendar-icon">
+                                    <p class="calendar-icon__day-number">30</p>
+                                    <p class="calendar-icon__month-name">Sep.</p>
+                                </div>
+                            </div>
+
+                            <div class="posts__description">
+                                <h3 class="posts__name">Lorem ipsum dolor sit amet</h3>
+                                <p class="posts__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                                <a class="posts__link" href="" >Read More ⯈</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide-3">
+                        <div class="posts__item"> <!-- item-3 -->
+                            <div class="posts__photo">
+                                <img class="posts__img" src="img/Content/Posts/photo-3.jpg" alt="" >
+                                <div class="posts__shadow"></div>
+                                <div class="calendar-icon">
+                                    <p class="calendar-icon__day-number">30</p>
+                                    <p class="calendar-icon__month-name">Sep.</p>
+                                </div>
+                            </div>
+
+                            <div class="posts__description">
+                                <h3 class="posts__name">Lorem ipsum dolor sit amet</h3>
+                                <p class="posts__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                                <a class="posts__link" href="" >Read More ⯈</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="posts__description">
-                    <h3 class="posts__name">Lorem ipsum dolor sit amet</h3>
-                    <p class="posts__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                    <a class="posts__link" href="" >Read More ⯈</a>
-                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div><!--/swiper-->
+            <!-- If we need navigation buttons -->
+            <div class="posts__buttons">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
 
-            <div class="posts__item"> <!-- item-2 -->
-                <div class="posts__photo">
-                    <img class="posts__img" src="img/Content/Posts/photo-2.jpg" alt="" >
-                    <div class="posts__shadow"></div>
-                    <div class="calendar-icon">
-                        <p class="calendar-icon__day-number">30</p>
-                        <p class="calendar-icon__month-name">Sep.</p>
-                    </div>
-                </div>
-
-                <div class="posts__description">
-                    <h3 class="posts__name">Lorem ipsum dolor sit amet</h3>
-                    <p class="posts__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                    <a class="posts__link" href="" >Read More ⯈</a>
-                </div>
-            </div>
-
-            <div class="posts__item"> <!-- item-3 -->
-                <div class="posts__photo">
-                    <img class="posts__img" src="img/Content/Posts/photo-3.jpg" alt="" >
-                    <div class="posts__shadow"></div>
-                    <div class="calendar-icon">
-                        <p class="calendar-icon__day-number">30</p>
-                        <p class="calendar-icon__month-name">Sep.</p>
-                    </div>
-                </div>
-
-                <div class="posts__description">
-                    <h3 class="posts__name">Lorem ipsum dolor sit amet</h3>
-                    <p class="posts__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                    <a class="posts__link" href="" >Read More ⯈</a>
-                </div>
-            </div>
         </div><!--/posts__elements-->
 
-        <div class="posts__buttons">
-            <a href="#" class="arrow_left"></a>
-            <a href="#" class="arrow_right"></a>
-        </div>
+
 
     </div><!--/posts-->
 </div>
+<!-- </div> -->
 </section>
 
 <section id="partners-scroll">
@@ -748,6 +769,7 @@
 
 <script src="js/projects.js"></script>
 <script src="js/popup-video.js"></script>
+<script src="js/swiper-posts.js"></script>
 
 </body>
 </html>

@@ -53,9 +53,8 @@ body._touch .intro-swiper .swiper-button-next {
     height: 14px;
     line-height: 20px;
     font-size: 14px;
-    background-color: #ffff;
+    background-color: #d1d1d1;
 }
-
 
 /* slides */
 .intro-swiper .swiper-slide.slide-1 .intro{

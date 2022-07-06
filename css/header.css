@@ -27,7 +27,7 @@
 
 .logo__img {
     display: block;
-    background: url(../img/Header/logos.png);
+    background: url(../img/Header/logos.svg);
     width: 64px;
     height: 56px;
 }
@@ -65,11 +65,10 @@
 .nav__link {
     margin-left: 28px;
     font-style: lighter;
-
     color: #fff;
     text-decoration: none;
 
-    transition: all .3s ease;
+    transition: color .3s ease;
 }
 
 .nav__link:first-child {
@@ -111,7 +110,7 @@
 
 body._pc .cart__button._active,
 body._touch .cart__button._active   {
-    background: url(../img/Header/icon-cart-gold.png);
+    background: url(../img/Header/icon-cart-gold.svg);
 }
 
 .cart-contents {
@@ -142,11 +141,11 @@ body._touch .cart__button._active   {
 }
 
 .cart__button_gold {
-    background: url(../img/Header/icon-cart.png);
+    background: url(../img/Header/icon-cart.svg);
 }
 
 body._pc .cart__button_gold:hover {
-    background: url(../img/Header/icon-cart-gold.png);
+    background: url(../img/Header/icon-cart-gold.svg);
 }
 
 /* search button */
@@ -161,15 +160,15 @@ body._pc .cart__button_gold:hover {
 
 body._pc .search__button._active,
 body._touch .search__button._active   {
-    background: url(../img/Header/icon-search-gold.png);
+    background: url(../img/Header/icon-search-gold.svg);
 }
 
 .search__button_gold {
-    background: url(../img/Header/icon-search.png);
+    background: url(../img/Header/icon-search.svg);
 }
 
 body._pc .search__button_gold:hover {
-    background: url(../img/Header/icon-search-gold.png);
+    background: url(../img/Header/icon-search-gold.svg);
 }
 
 /* Search Box
@@ -210,7 +209,7 @@ body._pc .search__button_gold:hover {
 
 .search-box input {
     background: transparent;
-    color:#7e7e7e;
+    color:#000000;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
 
@@ -253,7 +252,7 @@ input:focus {
 
 .header__burger span {
     position: absolute;
-    background-color: #8c8c8c;
+    background-color: rgb(140, 140, 140);
     width: 100%;
     height: 2px;
     left: 0;
@@ -265,7 +264,7 @@ input:focus {
 .header__burger:before,
 .header__burger:after {
     content: '';
-    background-color: #8c8c8c;
+    background-color:  rgb(140, 140, 140);
     width: 100%;
     height: 2px;
     position: absolute;
@@ -289,12 +288,14 @@ input:focus {
 .header__burger._active::before {
     top: 50%;
     transform: rotate(-45deg) translate(0px, -50%);
+    background-color:  rgb(199, 178, 153);
 
 }
 
 .header__burger._active::after {
    bottom: 50%;
    transform: rotate(45deg) translate(0px, 50%);
+   background-color:  rgb(199, 178, 153);
 }
 
 
@@ -305,7 +306,7 @@ input:focus {
     height: 80px;
 
     background-color: rgb(255, 255, 255);
-    transition: all 0.5s ease;
+    transition: height 0.5s ease;
 
     box-shadow: 0 0px 30px 0 rgba(0, 0, 0, .7);
 }
@@ -327,15 +328,15 @@ input:focus {
 }
 
 .header-fixed .logo__img {
-    background: url(../img/Header/logos-grey.png);
+    background: url(../img/Header/logos-grey.svg);
 }
 
 .header-fixed .cart__button {
-    background: url(../img/Header/icon-cart-grey.png);
+    background: url(../img/Header/icon-cart-grey.svg);
 }
 
 .header-fixed .search__button {
-    background: url(../img/Header/icon-search-grey.png);
+    background: url(../img/Header/icon-search-grey.svg);
 }
 
 .header-fixed .cart-contents  {
@@ -345,3 +346,5 @@ input:focus {
 .header-fixed .search-box {
     top: 65px;
 }
+
+

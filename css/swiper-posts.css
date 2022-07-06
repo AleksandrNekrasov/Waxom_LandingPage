@@ -18,27 +18,29 @@ body._pc .posts__elements .swiper-button-prev  {
     display: block;
     height: 100%;
     position: initial;
-    background: url(../img/Content/Posts/arrow-left.png) center no-repeat;
+    z-index: 1;
+    background: url(../img/Content/Posts/arrow-left.svg) center no-repeat;
 
     transition: background 0.2s linear;
     margin-right: 5px;
 }
 
 body._pc .posts__elements .swiper-button-prev:hover  {
-    background: url(../img/Content/Posts/arrow-left-gold.png) center no-repeat;
+    background: url(../img/Content/Posts/arrow-left-gold.svg) center no-repeat;
 }
 
 body._pc .posts__elements .swiper-button-next  {
     display: block;
     height: 100%;
     position: initial;
-    background: url(../img/Content/Posts/arrow-right.png) center no-repeat;
+    z-index: 1;
+    background: url(../img/Content/Posts/arrow-right.svg) center no-repeat;
 
     transition: background 0.2s linear;
 }
 
 body._pc .posts__elements .swiper-button-next:hover  {
-    background: url(../img/Content/Posts/arrow-right-gold.png) center no-repeat;
+    background: url(../img/Content/Posts/arrow-right-gold.svg) center no-repeat;
 }
 
 body._pc .posts__elements .swiper-pagination-bullet {

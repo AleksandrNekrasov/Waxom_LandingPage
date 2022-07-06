@@ -74,15 +74,15 @@
     }
 
     .logo__img {
-        background: url(../img/Header/logos-grey.png);
+        background: url(../img/Header/logos-grey.svg);
     }
 
     .cart__button {
-        background: url(../img/Header/icon-cart-grey.png);
+        background: url(../img/Header/icon-cart-grey.svg);
     }
 
     .search__button {
-        background: url(../img/Header/icon-search-grey.png);
+        background: url(../img/Header/icon-search-grey.svg);
     }
 
     .nav {

@@ -246,6 +246,7 @@
     text-align: center;
 
     transition: background .1s linear;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .projects__btn._active {

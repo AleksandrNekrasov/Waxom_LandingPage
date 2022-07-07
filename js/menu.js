@@ -177,13 +177,13 @@
 
     //intro block's height auto changing
 
-    if (isMobile.any() && introSwiper.style.height >= 500) {
+    if (isMobile.any() && window.innerHeight >= 500) {
         introSwiper.style.height = `${window.innerHeight}px`;
     } else {
         window.addEventListener('resize', changeIntroHeight, false);
         window.addEventListener('load', changeIntroHeight, false);
         function changeIntroHeight() {
-            if(window.innerHeight <= 1024 && window.innerHeight >= 450) {   //
+            if(window.innerHeight <= 1024 && window.innerHeight >= 450) {
                 introSwiper.style.height = `${window.innerHeight}px`;
             }
             else {

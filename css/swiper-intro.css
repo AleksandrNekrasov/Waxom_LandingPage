@@ -1,8 +1,6 @@
 .intro-swiper {
     width: 100%;
-    transition: height 0.2s ease;
 }
-
 
 .intro-swiper .swiper {
     max-width: 100%;

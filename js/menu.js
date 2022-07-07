@@ -176,37 +176,21 @@
     });
 
     //intro block's height auto changing
-    window.addEventListener('resize', changeIntroHeight, false);
-    window.addEventListener('load', changeIntroHeight, false);
 
-    function changeIntroHeight() {
-        if(window.innerHeight <= 1024 && window.innerHeight >= 500) {
-            introSwiper.style.height = `${window.innerHeight}px`;
-        } else if (window.innerHeight <= 500)
-            introSwiper.style.height = '500px';
-        else {
-            introSwiper.style.height = '1024px';
+    if (isMobile.any() && introSwiper.style.height >= 500) {
+        introSwiper.style.height = `${window.innerHeight}px`;
+    } else {
+        window.addEventListener('resize', changeIntroHeight, false);
+        window.addEventListener('load', changeIntroHeight, false);
+        function changeIntroHeight() {
+            if(window.innerHeight <= 1024 && window.innerHeight >= 450) {   //
+                introSwiper.style.height = `${window.innerHeight}px`;
+            }
+            else {
+                introSwiper.style.height = '1024px';
+            };
         };
     };
-
-    // if(window.innerHeight <= 1024 && window.innerHeight >= 500) {
-    //     introSwiper.style.height = `${window.innerHeight}px`;
-    // } else if (window.innerHeight <= 500)
-    //     introSwiper.style.height = '500px';
-    // else {
-    //     introSwiper.style.height = '1024px';
-    // };
-
-
-    // window.addEventListener('resize', ()=> {
-    //     if(window.innerHeight <= 1024 && window.innerHeight >= 500) {
-    //         introSwiper.style.height = `${window.innerHeight}px`;
-    //     } else if (window.innerHeight <= 500)
-    //         introSwiper.style.height = '500px';
-    //     else {
-    //         introSwiper.style.height = '1024px';
-    //     };
-    // });
 
 })();
 

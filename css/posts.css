@@ -107,6 +107,7 @@
     align-items: center;
     text-decoration: none;
     color: #c7b299;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .read-link__text {

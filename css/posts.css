@@ -176,3 +176,8 @@
 body._touch .posts__buttons{
     display: none;
 }
+
+
+.unicode-arrow {
+    font-family: "Droid Sans", sans-serif;
+}

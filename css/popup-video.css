@@ -11,6 +11,8 @@
     visibility: hidden;
 
     transition: all 0.2s ease;
+
+    overflow: scroll;
 }
 
 .popup-video._active {

@@ -204,8 +204,8 @@ body._pc .search__button_gold:hover {
 [type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
     appearance: none;
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
     background-image: url(../img/Header/cross-black.svg);
     background-size: cover;
     cursor: pointer;

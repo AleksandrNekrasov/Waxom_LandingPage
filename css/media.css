@@ -113,13 +113,16 @@
     .nav::before {
         content: '';
         position: fixed;
+        z-index: 2;
         width: 100%;
         top: 0;
         right: 0;
         /* height: 80px; */
         height: 70px;
-
         background-color: #ffff;
+
+        -webkit-background-color: #ffff;
+        -webkit-content: '';
 
         box-shadow: 0 0px 30px 0 rgba(0, 0, 0, .7);
     }

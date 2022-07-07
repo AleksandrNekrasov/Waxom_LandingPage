@@ -47,6 +47,22 @@
         document.body.classList.add('_pc');
     };
 
+     //intro block's height auto changing
+    if (isMobile.any() && window.innerHeight >= 500) {
+        introSwiper.style.height = `${window.innerHeight}px`;
+    } else {
+        window.addEventListener('resize', changeIntroHeight, false);
+        window.addEventListener('load', changeIntroHeight, false);
+        function changeIntroHeight() {
+            if(window.innerHeight <= 1024 && window.innerHeight >= 450) {
+                introSwiper.style.height = `${window.innerHeight}px`;
+            }
+            else {
+                introSwiper.style.height = '1024px';
+            };
+        };
+    };
+
     //fixed navigation after scrolling down if sceen size >= 991px
     window.addEventListener('scroll', showFixedNav, false);
     window.addEventListener('load', showFixedNav, false);
@@ -175,22 +191,6 @@
 
     });
 
-    //intro block's height auto changing
-
-    if (isMobile.any() && window.innerHeight >= 500) {
-        introSwiper.style.height = `${window.innerHeight}px`;
-    } else {
-        window.addEventListener('resize', changeIntroHeight, false);
-        window.addEventListener('load', changeIntroHeight, false);
-        function changeIntroHeight() {
-            if(window.innerHeight <= 1024 && window.innerHeight >= 450) {
-                introSwiper.style.height = `${window.innerHeight}px`;
-            }
-            else {
-                introSwiper.style.height = '1024px';
-            };
-        };
-    };
 
 })();
 

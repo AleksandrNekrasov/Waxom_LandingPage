@@ -101,12 +101,33 @@
     transition: all .2s linear;
 }
 
-.posts__link {
-    display: inline;
-    font-weight: 300;
-    color: #c7b299;
+.read-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     text-decoration: none;
+    color: #c7b299;
 }
+
+.read-link__text {
+    font-weight: 300;
+    margin-right: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.read-link__triange-right {
+    display: block;
+    width: 0;
+	height: 0;
+    margin: 0;
+	border-top: 4px solid transparent;
+	border-left: 4px solid;
+	border-bottom: 4px solid transparent;
+    margin-left: 6px;
+    margin-top: 1.5px;
+}
+
 
 /* animation */
 .posts__item:hover .posts__shadow {

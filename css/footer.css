@@ -89,12 +89,12 @@
 
 
 /* Item 1 - Read Me Link */
-.footer__link {
+.read-link_white {
     color: #d1d1d1;
     transition: all .2s linear;
 }
 
-.footer__link:hover {
+.read-link_white:hover {
     color: #c7b299
 }
 

@@ -11,7 +11,7 @@
     let navMenu = document.querySelector('.nav');
     let sections = document.querySelectorAll('section');
     let navLi = document.querySelectorAll('.nav__inner li');
-    let intro = document.querySelectorAll('.intro');
+    let introSwiper = document.querySelector('.intro-swiper');
     let scrollPos;
     let isMobile = {
         Android: function () {
@@ -72,7 +72,7 @@
             const navLink = e.target;
             if (navLink.dataset.goto && document.querySelector(navLink.dataset.goto)) {
                 const gotoBlock = document.querySelector(navLink.dataset.goto);
-                const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - 80;
+                const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - 70;
 
                 if(burgerMenu.classList.contains('_active')) {
                     document.body.classList.remove('_lock');
@@ -156,7 +156,7 @@
         sections.forEach (section => {
             const sectionTop = section.offsetTop;
 
-            if (scrollY >= (sectionTop - 200)) {
+            if (scrollY >= (sectionTop - 190)) {
                 currentSection = section.getAttribute('id');
             };
         });
@@ -175,16 +175,38 @@
 
     });
 
-    // intro change height
-    if(window.innerHeight <= 1024) {
-        intro.forEach( elem => {
-            elem.style.height = `${window.innerHeight}px`
-        });
-    } else {
-        intro.forEach( elem => {
-            elem.style.height = '1024px'
-        });
+    //intro block's height auto changing
+    window.addEventListener('resize', changeIntroHeight, false);
+    window.addEventListener('load', changeIntroHeight, false);
+
+    function changeIntroHeight() {
+        if(window.innerHeight <= 1024 && window.innerHeight >= 500) {
+            introSwiper.style.height = `${window.innerHeight}px`;
+        } else if (window.innerHeight <= 500)
+            introSwiper.style.height = '500px';
+        else {
+            introSwiper.style.height = '1024px';
+        };
     };
+
+    // if(window.innerHeight <= 1024 && window.innerHeight >= 500) {
+    //     introSwiper.style.height = `${window.innerHeight}px`;
+    // } else if (window.innerHeight <= 500)
+    //     introSwiper.style.height = '500px';
+    // else {
+    //     introSwiper.style.height = '1024px';
+    // };
+
+
+    // window.addEventListener('resize', ()=> {
+    //     if(window.innerHeight <= 1024 && window.innerHeight >= 500) {
+    //         introSwiper.style.height = `${window.innerHeight}px`;
+    //     } else if (window.innerHeight <= 500)
+    //         introSwiper.style.height = '500px';
+    //     else {
+    //         introSwiper.style.height = '1024px';
+    //     };
+    // });
 
 })();
 

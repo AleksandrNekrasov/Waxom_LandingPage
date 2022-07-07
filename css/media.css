@@ -159,13 +159,15 @@
 
     /* Intro */
 
-    .intro-swiper .swiper-button-prev::after {
-        margin-left: 10px;
+    /* Intro-swiper */
+    section .intro-swiper .swiper-button-prev {
+        left: 25px;
     }
 
-    .intro-swiper .swiper-button-next::after {
-        margin-right: 10px;
+    section .intro-swiper .swiper-button-next {
+        right: 25px;
     }
+
 
     /* Services */
     .services__item:nth-child(1){
@@ -235,9 +237,7 @@
 
 @media (max-width: 767px) {
     /* Intro */
-    .intro {
-        height: 900px;
-    }
+
     .intro__overtitle {
         font-size: 26px;
     }
@@ -294,9 +294,9 @@
     .services__item:nth-child(3){
         height: 250px;
     }
-    .services__item:nth-child(4){
+    /* .services__item:nth-child(4){
         height: 250px;
-    }
+    } */
 
     /* Purchase */
     .purchase__inner {
@@ -399,6 +399,9 @@
     }
 
     /* Partners */
+    .partners__inner {
+        padding: 80px 0;
+    }
 
     .partners__item {
         width: 100%;

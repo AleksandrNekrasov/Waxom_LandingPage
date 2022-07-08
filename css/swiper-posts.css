@@ -47,7 +47,7 @@ body._pc .posts__elements .swiper-pagination-bullet {
     background-color: #c7b299;
 }
 
-/* mobile devisec have paggination only without buttons */
+/* mobile devices have paggination only without buttons */
 
 body._touch .posts__elements .swiper-pagination-bullet {
     width: 14px;

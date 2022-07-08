@@ -1,5 +1,7 @@
 'use strict';
 (function() {
+    navigator.virtualKeyboard.overlaysContent = 'true';
+    console.log(navigator.virtualKeyboard.overlaysContent);
 
     let header = document.getElementById('header');
     let searchButton = document.getElementById('search__button');
@@ -13,6 +15,7 @@
     let navLi = document.querySelectorAll('.nav__inner li');
     let introSwiper = document.querySelector('.intro-swiper');
     let scrollPos;
+
     let isMobile = {
         Android: function () {
             return navigator.userAgent.match(/Android/i);
@@ -40,6 +43,7 @@
         }
     };
 
+
     if(isMobile.any()) {
         document.body.classList.add('_touch');
     } else {
@@ -48,10 +52,7 @@
 
      //intro block's height auto changing
     if (isMobile.any() && window.innerHeight >= 500) {
-        function changeIntroHeightMobile () {
-            introSwiper.style.height = `${window.innerHeight}px`;
-        };
-        setTimeout(changeIntroHeightMobile, 100);
+        introSwiper.style.height = `${window.visualViewport.height}px`;
     } else {
         window.addEventListener('resize', changeIntroHeightPC, false);
         window.addEventListener('load', changeIntroHeightPC, false);
@@ -85,6 +86,7 @@
     console.log('widow.outer' + ' - ' + window.outerHeight);
     console.log('widow.inner' + ' - ' + window.innerHeight);
     console.log('visual.viewport' + ' - ' + window.visualViewport.height);
+    console.log('clientHeight' + ' - ' + document.documentElement.clientHeight);
 
 
     //auto-scrolling navigation after click on nav item
@@ -131,7 +133,7 @@
     };
 
     // add fixed height value for activation overflow scrolling,
-    // when a mobile device in hozintal pos
+    // when a mobile device in horizontal pos
     window.addEventListener('load', changeHeight, false);
     window.addEventListener('resize', changeHeight, false);
     function changeHeight() {

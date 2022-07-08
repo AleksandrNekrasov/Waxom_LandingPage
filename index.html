@@ -5,6 +5,7 @@
     <meta  name="viewport" content="width=device-width initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Raleway:wght@400;500;600;700;800&family=Roboto&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
@@ -36,7 +37,10 @@
     <title>Waxom</title>
 
 </head>
-<body>
+<body class="_lock">
+<div class="preloader" id="preloader">
+    <div class="lds-dual-ring"></div>
+</div>
 
 <header class="header" id="header">
     <div class="container">
@@ -781,6 +785,7 @@
 </div>
 
 <!--JavaScript-->
+<script src="js/preloader.js"></script>
 <script src="js/menu.js"></script>
 
 <!-- https://swiperjs.com/ -->

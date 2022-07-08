@@ -40,7 +40,6 @@
         }
     };
 
-
     if(isMobile.any()) {
         document.body.classList.add('_touch');
     } else {
@@ -49,11 +48,14 @@
 
      //intro block's height auto changing
     if (isMobile.any() && window.innerHeight >= 500) {
-        introSwiper.style.height = `${window.innerHeight}px`;
+        function changeIntroHeightMobile () {
+            introSwiper.style.height = `${window.innerHeight}px`;
+        };
+        setTimeout(changeIntroHeightMobile, 100);
     } else {
-        window.addEventListener('resize', changeIntroHeight, false);
-        window.addEventListener('load', changeIntroHeight, false);
-        function changeIntroHeight() {
+        window.addEventListener('resize', changeIntroHeightPC, false);
+        window.addEventListener('load', changeIntroHeightPC, false);
+        function changeIntroHeightPC() {
             if(window.innerHeight <= 1024 && window.innerHeight >= 450) {
                 introSwiper.style.height = `${window.innerHeight}px`;
             }
@@ -76,6 +78,14 @@
             header.classList.remove('header-fixed');
         };
     }
+
+    // console.log(visualViewport.height);
+    console.log('window.screen.height' + ' - ' + window.screen.height);
+    console.log('window.screen.AvailHeight' + ' - ' + window.screen.availHeight);
+    console.log('widow.outer' + ' - ' + window.outerHeight);
+    console.log('widow.inner' + ' - ' + window.innerHeight);
+    console.log('visual.viewport' + ' - ' + window.visualViewport.height);
+
 
     //auto-scrolling navigation after click on nav item
     if (navLinks.length > 0) {
@@ -146,8 +156,6 @@
             cartBox.classList.remove('_active');
         })
     };
-
-
 
     //cart box appearance
     if(cartButton) {

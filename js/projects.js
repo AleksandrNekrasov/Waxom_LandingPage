@@ -97,13 +97,4 @@
         projectsEmpty.classList.add('_active');
     });
 
-
-    // allProjectsItems.forEach( project => {
-    //     if(project.classList.contains('_active')){
-    //         project.style.display = 'block';
-    //     } else if  (project.style.opacity == '0'){
-    //         project.style.display = 'none';
-    //     }
-    // });
-
 }())

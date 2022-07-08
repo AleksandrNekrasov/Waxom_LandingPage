@@ -1,8 +1,5 @@
 'use strict';
 (function() {
-    navigator.virtualKeyboard.overlaysContent = 'true';
-    console.log(navigator.virtualKeyboard.overlaysContent);
-
     let header = document.getElementById('header');
     let searchButton = document.getElementById('search__button');
     let searchBox = document.getElementById('search-box');
@@ -13,7 +10,6 @@
     let navMenu = document.querySelector('.nav');
     let sections = document.querySelectorAll('section');
     let navLi = document.querySelectorAll('.nav__inner li');
-    let introSwiper = document.querySelector('.intro-swiper');
     let scrollPos;
 
     let isMobile = {
@@ -50,22 +46,6 @@
         document.body.classList.add('_pc');
     };
 
-     //intro block's height auto changing
-    if (isMobile.any() && window.innerHeight >= 500) {
-        introSwiper.style.height = `${window.visualViewport.height}px`;
-    } else {
-        window.addEventListener('resize', changeIntroHeightPC, false);
-        window.addEventListener('load', changeIntroHeightPC, false);
-        function changeIntroHeightPC() {
-            if(window.innerHeight <= 1024 && window.innerHeight >= 450) {
-                introSwiper.style.height = `${window.innerHeight}px`;
-            }
-            else {
-                introSwiper.style.height = '1024px';
-            };
-        };
-    };
-
     //fixed navigation after scrolling down if sceen size >= 991px
     window.addEventListener('scroll', showFixedNav, false);
     window.addEventListener('load', showFixedNav, false);
@@ -79,15 +59,6 @@
             header.classList.remove('header-fixed');
         };
     }
-
-    // console.log(visualViewport.height);
-    console.log('window.screen.height' + ' - ' + window.screen.height);
-    console.log('window.screen.AvailHeight' + ' - ' + window.screen.availHeight);
-    console.log('widow.outer' + ' - ' + window.outerHeight);
-    console.log('widow.inner' + ' - ' + window.innerHeight);
-    console.log('visual.viewport' + ' - ' + window.visualViewport.height);
-    console.log('clientHeight' + ' - ' + document.documentElement.clientHeight);
-
 
     //auto-scrolling navigation after click on nav item
     if (navLinks.length > 0) {

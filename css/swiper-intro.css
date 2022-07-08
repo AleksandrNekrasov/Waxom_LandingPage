@@ -1,5 +1,8 @@
 .intro-swiper {
     width: 100%;
+    min-height: 500px;
+    max-height: 1080px;
+    height: 100vh;
 }
 
 .intro-swiper .swiper {
@@ -8,7 +11,6 @@
 }
 
 /* button */
-
 .intro-swiper .swiper-button-prev {
     left: 100px;
     opacity: 0.3;

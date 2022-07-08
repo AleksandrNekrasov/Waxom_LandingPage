@@ -10,6 +10,7 @@
     let navMenu = document.querySelector('.nav');
     let sections = document.querySelectorAll('section');
     let navLi = document.querySelectorAll('.nav__inner li');
+    let introSwiper = document.querySelector('.intro-swiper');
     let scrollPos;
 
     let isMobile = {
@@ -42,6 +43,10 @@
 
     if(isMobile.any()) {
         document.body.classList.add('_touch');
+        window.addEventListener('resize', () => {
+            introSwiper.style.height = `${document.documentElement.clientHeight}px`;
+        });
+        introSwiper.style.height = `${document.documentElement.clientHeight}px`;
     } else {
         document.body.classList.add('_pc');
     };

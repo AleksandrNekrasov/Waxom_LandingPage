@@ -69,11 +69,11 @@
          padding: 7px 0;
     }
 
-    .logo__name {
+    .header .logo__name {
         color: #8c8c8c;
     }
 
-    .logo__img svg path{
+    .header .logo__img svg path{
         fill:rgb(140, 140, 140);
     }
 

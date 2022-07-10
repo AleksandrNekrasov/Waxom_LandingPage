@@ -131,25 +131,25 @@
 
 
 /* animation */
-.posts__item:hover .posts__shadow {
+body._pc .posts__item:hover .posts__shadow {
     opacity: 1;
 }
 
-.posts__item:hover .calendar-icon {
+body._pc .posts__item:hover .calendar-icon {
     background: linear-gradient(to bottom, #c7b299 60%, #a48d72 40%);
 }
 
-.posts__item:hover .posts__description {
+body._pc .posts__item:hover .posts__description {
     background-color: #362f2d;
     border: 1px #362f2d solid;
     border-top: 0;
 }
 
-.posts__item:hover .posts__name {
+body._pc .posts__item:hover .posts__name {
     color: #c7b299;
 }
 
-.posts__item:hover .posts__text {
+body._pc .posts__item:hover .posts__text {
     color: #ffff;
 }
 

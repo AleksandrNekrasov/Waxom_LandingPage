@@ -75,6 +75,10 @@
     border-bottom: 3px solid #c0b199;
 }
 
-.services__link-back:hover {
+body._pc .services__link-back:hover {
+    opacity: 1;
+}
+
+.services__link-back._active {
     opacity: 1;
 }

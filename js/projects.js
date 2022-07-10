@@ -12,7 +12,32 @@
     let projectsPhoto = document.querySelectorAll('.projects-photo');
     let projectsDesign = document.querySelectorAll('.projects-design');
 
-
+    let isMobile = {
+        Android: function () {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function () {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function () {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function () {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function () {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function () {
+            return (
+                    isMobile.Android()
+                    || isMobile.BlackBerry()
+                    || isMobile.iOS()
+                    || isMobile.Opera()
+                    || isMobile.Windows()
+                    );
+        }
+    };
 
     if(btnAll.classList.contains('_active')) {
         allProjectsItems.forEach( project => {
@@ -96,5 +121,18 @@
 
         projectsEmpty.classList.add('_active');
     });
+
+
+    if(isMobile.any()){
+
+        allProjectsItems.forEach(project => {
+
+            project.addEventListener('click', function(){
+                project.classList.toggle('_touch');
+            });
+
+        });
+    };
+
 
 }())

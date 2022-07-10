@@ -122,8 +122,9 @@
     display: block;
     width: 26px;
     height: 26px;
-
     margin: 0 14px;
+
+    visibility: hidden;
     transition: all .2s linear;
 }
 
@@ -133,6 +134,7 @@
     height: 25px;
     margin: 0 14px;
 
+    visibility: hidden;
     transition: all .2s linear;
 }
 
@@ -179,15 +181,27 @@
 
 
 /* animation */
-.projects__item:hover .projects__hover {
+body._pc .projects__item:hover .projects__hover {
     opacity: 1;
+}
+
+.projects__item._touch .projects__hover {
+    opacity: 1;
+}
+
+body._pc .projects__item:hover .icon_link,
+body._pc .projects__item:hover .icon_lupa,
+.projects__item._touch .icon_link,
+.projects__item._touch .icon_lupa {
+    visibility: visible;
 }
 
 .project__info__colored {
     background-color: #fbfaf8;
 }
 
-.projects__item:hover .project__info__colored {
+body._pc .projects__item:hover .project__info__colored,
+.projects__item._touch .project__info__colored{
     background-color: #362f2d;
 }
 
@@ -195,7 +209,8 @@
     border-bottom: 10px solid #fbfaf8;
 }
 
-.projects__item:hover .arrow__figure_brown {
+body._pc .projects__item:hover .arrow__figure_brown,
+.projects__item._touch .arrow__figure_brown {
     border-bottom: 10px solid #362f2d;
 }
 
@@ -203,7 +218,7 @@
     color: #c7b299;
 }
 
-.projects__item:hover .project__name_white {
+body._pc .projects__item:hover .project__name_white {
     color: #ffff;
 }
 
@@ -212,7 +227,7 @@
     color: #d1d1d1;
 }
 
-.projects__item:hover .project__theme_gold {
+body._pc .projects__item:hover .project__theme_gold {
     color: #c7b299;
 }
 

@@ -61,13 +61,11 @@
 @media (max-width: 991px) {
     /* Header */
     .header {
-        /* height: 80px; */
         height: 70px;
         position: fixed;
     }
 
     .header__inner {
-        /* padding: 12px 0; */
          padding: 7px 0;
     }
 
@@ -79,8 +77,8 @@
         background: url(../img/Header/logos-grey.svg);
     }
 
-    .cart__button {
-        background: url(../img/Header/icon-cart-grey.svg);
+    .cart__button svg path{
+        fill:rgb(140, 140, 140);
     }
 
     .search__button {

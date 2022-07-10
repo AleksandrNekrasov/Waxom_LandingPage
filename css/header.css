@@ -29,7 +29,6 @@
 
 .logo__img {
     display: block;
-    background: url(../img/Header/logos.svg);
     width: 64px;
     height: 56px;
 }
@@ -104,7 +103,6 @@
     display: block;
     height: 24px;
     width: 18px;
-    transition: all .1s linear;
     cursor: pointer;
 
     margin-right: 25px;
@@ -138,14 +136,13 @@
     cursor: default;
 }
 
-/* .cart__button_gold svg path{
-    fill:rgb(255, 255, 255);
-} */
+.cart__button svg path {
+    transition: all 0.1s linear;
+}
 
-body._pc .cart__button._active svg path,
-body._touch .cart__button._active  svg path,
+.cart__button._active svg path,
 body._pc .cart__button:hover svg path {
-    fill:rgb(199, 178, 153);
+    fill: rgb(199, 178, 153);
 }
 
 /* search button */
@@ -159,17 +156,13 @@ body._pc .cart__button:hover svg path {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-body._pc .search__button._active,
-body._touch .search__button._active   {
-    background: url(../img/Header/icon-search-gold.svg);
+.search__button svg path {
+    transition: all 0.1s linear;
 }
 
-.search__button_gold {
-    background: url(../img/Header/icon-search.svg);
-}
-
-body._pc .search__button_gold:hover {
-    background: url(../img/Header/icon-search-gold.svg);
+.search__button._active svg path,
+body._pc .search__button:hover svg path{
+    fill: rgb(199, 178, 153);
 }
 
 /* Search Box
@@ -327,23 +320,31 @@ input:focus {
 }
 
 .header-fixed .nav__link:hover {
-    color:#c7b299;
+    color: #c7b299;
 }
 
 .header-fixed .logo__name {
     color: #8c8c8c;
 }
 
-.header-fixed .logo__img {
-    background: url(../img/Header/logos-grey.svg);
+.header-fixed .logo__img svg path {
+    fill: rgb(140, 140, 140);
 }
 
 .header-fixed .cart__button svg path {
-    fill:rgb(140, 140, 140);
+    fill: rgb(140, 140, 140);
 }
 
-.header-fixed .search__button {
-    background: url(../img/Header/icon-search-grey.svg);
+.header-fixed .cart__button._active svg path {
+    fill: #c7b299;
+}
+
+.header-fixed .search__button svg path{
+    fill: rgb(140, 140, 140);
+}
+
+.header-fixed .search__button._active svg path{
+    fill: #c7b299;
 }
 
 .header-fixed .cart-contents  {

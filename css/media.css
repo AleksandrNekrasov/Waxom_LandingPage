@@ -73,16 +73,16 @@
         color: #8c8c8c;
     }
 
-    .logo__img {
-        background: url(../img/Header/logos-grey.svg);
+    .logo__img svg path{
+        fill:rgb(140, 140, 140);
     }
 
     .cart__button svg path{
         fill:rgb(140, 140, 140);
     }
 
-    .search__button {
-        background: url(../img/Header/icon-search-grey.svg);
+    .search__button svg path{
+        fill:rgb(140, 140, 140);
     }
 
     .nav {

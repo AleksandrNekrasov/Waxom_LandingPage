@@ -33,16 +33,15 @@
     position: absolute;
     top: 15px;
     left: 15px;
-    background: url(../img/Content/Video/icon-play.svg) center no-repeat;
-
-    transition: all 0.2s linear;
     cursor: pointer;
-
 }
 
+.icon__play svg path {
+    transition: all 0.2s linear
+}
 
-.icon__play:hover {
-    background: url(../img/Content/Video/icon-play-gold.svg) center no-repeat;
+.icon__play:hover svg path{
+    fill: #c7b299;
 }
 
 

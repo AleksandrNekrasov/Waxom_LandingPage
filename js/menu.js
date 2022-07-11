@@ -40,18 +40,18 @@
         }
     };
 
+    //deactivate viewport size changes when keyboard pop up on mobile devices;
     if ("virtualKeyboard" in navigator) {
         navigator.virtualKeyboard.overlaysContent = true;
     };
 
     //action when website is opening on mobile devices
     if(isMobile.any()) {
-        console.log(navigator.virtualKeyboard.overlaysContent);
         document.body.classList.add('_touch');
         window.addEventListener('resize', () => {
             introSwiper.style.height = `${document.documentElement.clientHeight}px`;
         });
-        introSwiper.style.height = `${document.documentElement.clientHeight}px`;
+        // introSwiper.style.height = `${document.documentElement.clientHeight}px`;
     } else {
         document.body.classList.add('_pc');
     };

@@ -51,7 +51,7 @@
         window.addEventListener('resize', () => {
             introSwiper.style.height = `${document.documentElement.clientHeight}px`;
         });
-        // introSwiper.style.height = `${document.documentElement.clientHeight}px`;
+        introSwiper.style.height = `${document.documentElement.clientHeight}px`;
     } else {
         document.body.classList.add('_pc');
     };

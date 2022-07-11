@@ -43,9 +43,11 @@
     //action when website is opening on mobile devices
     if(isMobile.any()) {
         document.body.classList.add('_touch');
-        window.outerWidth.addEventListener('resize', () => {
-            introSwiper.style.height = `${document.documentElement.clientHeight}px`;
-        });
+        if(!searchButton.classList.contains('_active')) {
+            window.addEventListener('resize', () => {
+                introSwiper.style.height = `${document.documentElement.clientHeight}px`;
+            });
+        };
         introSwiper.style.height = `${document.documentElement.clientHeight}px`;
     } else {
         document.body.classList.add('_pc');

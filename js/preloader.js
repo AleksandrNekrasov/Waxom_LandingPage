@@ -1,6 +1,5 @@
 'use strict';
-
-window.onload = function () {
+document.body.onload = function () {
     document.body.classList.remove('_lock');
     setTimeout(function(){
         let preloader = document.getElementById('preloader');
@@ -8,6 +7,5 @@ window.onload = function () {
         if( !preloader.classList.contains('_done') ) {
             preloader.classList.add('_done');
         };
-
-    }, 300);
+    }, 250);
 }

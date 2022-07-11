@@ -38,9 +38,6 @@
     buttonPlay.addEventListener('click', function(e){
         document.body.classList.add('_lock')
         popupVideo.classList.add('_active');
-        iframeVideo.setAttribute('src', 'https://www.youtube.com/embed/8Z1eMy2FoX4?enablejsapi=1');
-
-
     });
 
     buttonClose.addEventListener('click', function(e){

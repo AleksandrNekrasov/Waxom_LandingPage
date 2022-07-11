@@ -40,14 +40,17 @@
         }
     };
 
+    if ("virtualKeyboard" in navigator) {
+        navigator.virtualKeyboard.overlaysContent = true;
+    };
+
     //action when website is opening on mobile devices
     if(isMobile.any()) {
+        console.log(navigator.virtualKeyboard.overlaysContent);
         document.body.classList.add('_touch');
-        if(!searchButton.classList.contains('_active')) {
-            window.addEventListener('resize', () => {
-                introSwiper.style.height = `${document.documentElement.clientHeight}px`;
-            });
-        };
+        window.addEventListener('resize', () => {
+            introSwiper.style.height = `${document.documentElement.clientHeight}px`;
+        });
         introSwiper.style.height = `${document.documentElement.clientHeight}px`;
     } else {
         document.body.classList.add('_pc');

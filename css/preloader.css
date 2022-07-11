@@ -9,8 +9,15 @@
     z-index: 1001;
     opacity: 1;
     visibility: visible;
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
 }
+
+.preloader._done {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
 
 .lds-dual-ring {
     display: inline-block;

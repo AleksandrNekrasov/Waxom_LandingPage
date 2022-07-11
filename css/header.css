@@ -37,7 +37,7 @@
     font-size: 34px;
     font-family: 'Raleway', sans-serif;
     color: #fff;
-    font-style: 500;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -56,7 +56,7 @@
 
 .nav__inner li {
     margin-right: 25px;
-    transition: all 0.3s linear;
+    transition: color 0.3s linear;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -66,7 +66,7 @@
 
 .nav__link {
     margin-left: 28px;
-    font-style: lighter;
+    font-weight: 300;
     color: #fff;
     text-decoration: none;
 
@@ -306,7 +306,7 @@ input:focus {
     height: 80px;
 
     background-color: rgb(255, 255, 255);
-    transition: height 0.5s ease;
+    transition: height 0.3s ease;
 
     box-shadow: 0 0px 30px 0 rgba(0, 0, 0, .7);
 }

@@ -1,8 +1,15 @@
 'use strict';
-window.onload = function () {
-    let preloader = document.getElementById('preloader');
+document.body.onload = function () {
     document.body.classList.remove('_lock');
-    preloader.style.opacity = '0';
-    preloader.style.visibility = 'hidden';
+
+    setTimeout(function(){
+        let preloader = document.getElementById('preloader');
+
+        if( !preloader.classList.contains('_done') ) {
+            preloader.classList.add('_done');
+        };
+
+    }, 200);
+
 
 }

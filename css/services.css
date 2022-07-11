@@ -51,6 +51,10 @@
     font-weight: 600;
 }
 
+.services__title span {
+    font-family: 'Montserrat';
+}
+
 .services__text {
     font-weight: 300;
     line-height: 1.7;

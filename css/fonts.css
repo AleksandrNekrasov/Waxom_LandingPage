@@ -1,0 +1,67 @@
+/* Montserrat  */
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat/Montserrat-ExtraLight.eot');
+	src: local('☺'), url('../fonts/Montserrat/Montserrat-ExtraLight.woff') format('woff'), url('../fonts/Montserrat/Montserrat-ExtraLight.ttf') format('truetype'), url('../fonts/Montserrat/Montserrat-ExtraLight.svg') format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat/Montserrat-Light.eot');
+	src: local('☺'), url('../fonts/Montserrat/Montserrat-Light.woff') format('woff'), url('../fonts/Montserrat/Montserrat-Light.ttf') format('truetype'), url('../fonts/Montserrat/Montserrat-Light.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat/Montserrat-Regular.eot');
+	src: local('☺'), url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'), url('../fonts/Montserrat/Montserrat-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Raleway  */
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway/Raleway-Regular.eot');
+	src: local('☺'), url('../fonts/Raleway/Raleway-Regular.woff') format('woff'), url('../fonts/Raleway/Raleway-Regular.ttf') format('truetype'), url('../fonts/Raleway/Raleway-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway/Raleway-Medium.eot');
+	src: local('☺'), url('../fonts/Raleway/Raleway-Medium.woff') format('woff'), url('../fonts/Raleway/Raleway-Medium.ttf') format('truetype'), url('../fonts/Raleway/Raleway-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway/Raleway-SemiBold.eot');
+	src: local('☺'), url('../fonts/Raleway/Raleway-SemiBold.woff') format('woff'), url('../fonts/Raleway/Raleway-SemiBold.ttf') format('truetype'), url('../fonts/Raleway/Raleway-SemiBold.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway/Raleway-Bold.eot');
+	src: local('☺'), url('../fonts/Raleway/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway/Raleway-Bold.ttf') format('truetype'), url('../fonts/Raleway/Raleway-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway/Raleway-ExtraBold.eot');
+	src: local('☺'), url('../fonts/Raleway/Raleway-ExtraBold.woff') format('woff'), url('../fonts/Raleway/Raleway-ExtraBold.ttf') format('truetype'), url('../fonts/Raleway/Raleway-ExtraBold.svg') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}

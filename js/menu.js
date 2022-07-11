@@ -40,10 +40,10 @@
         }
     };
 
-
+    //action when website is opening on mobile devices
     if(isMobile.any()) {
         document.body.classList.add('_touch');
-        window.addEventListener('resize', () => {
+        window.outerWidth.addEventListener('resize', () => {
             introSwiper.style.height = `${document.documentElement.clientHeight}px`;
         });
         introSwiper.style.height = `${document.documentElement.clientHeight}px`;
@@ -51,7 +51,7 @@
         document.body.classList.add('_pc');
     };
 
-    //fixed navigation after scrolling down if sceen size >= 991px
+    //fixed navigation after scrolling down if screen size >= 991px
     window.addEventListener('scroll', showFixedNav, false);
     window.addEventListener('load', showFixedNav, false);
 

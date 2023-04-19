@@ -46,6 +46,7 @@
 
 .nav {
     display: flex;
+    font-size: 16px;
 }
 
 .nav__inner {
@@ -66,7 +67,7 @@
 
 .nav__link {
     margin-left: 28px;
-    font-weight: 300;
+    font-weight: 400;
     color: #fff;
     text-decoration: none;
 
@@ -319,8 +320,8 @@ input:focus {
     color: #8c8c8c;
 }
 
-.header-fixed .nav__link:hover {
-    color: #c7b299;
+.header-fixed .nav__inner li._active .nav__link, .header-fixed .nav__link:hover  {
+    color: #bd8b51;
 }
 
 .header-fixed .logo__name {
